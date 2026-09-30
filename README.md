@@ -9,29 +9,29 @@ sehbehinderte Menschen, gehörlose und schwerhörige Menschen, Menschen, die auf
 vereinfachte Sprache angewiesen sind.
 
 Man sollte meinen, es genüge nachzusehen, ob „Hörfassung“ dabeisteht. Dieses Repository
-zeigt an echten Beispielen, warum das nicht reicht. **Es gibt keine offene, dokumentierte
+zeigt an echten Beispielen, warum das nicht reicht und nicht so einfachist. **Es gibt keine offene, dokumentierte
 Schnittstelle, die für eine Sendung verlässlich sagt, welche barrierefreien Fassungen es von
-ihr gibt.** Jeder Sender beschreibt sie anders, und jedes Programm, das Mediatheken
+ihr gibt.** Die Sender beschreiben diese Fassungen uneinheitlich. Jedes Programm, das Mediatheken
 senderübergreifend durchsucht, rät auf seine Weise.
 
 Die meisten dieser Programme fragen nicht selbst bei den Sendern nach. Sie lesen die
 **[MediathekView-Filmliste](https://mediathekview.de/)**: eine Datei, in der das
-ehrenamtliche Projekt MediathekView mehrmals täglich zusammenträgt, was rund dreißig
+ehrenamtliche Projekt MediathekView seit rund 18 Jahren mehrmals täglich zusammenträgt, was rund dreißig
 Mediatheken anbieten – rund 594.000 Einträge, jeder mit Sender, Thema, Titel und den Links
 zum Video und zur Sendungsseite. Rund 80 öffentliche Projekte bauen darauf auf. Was in
 dieser Datei steht, sieht also fast jedes Programm, das Mediatheken senderübergreifend
-durchsucht – und was dort fehlt, fehlt überall.
+durchsucht. Umgekehrt bedeutet dies aber auch: was dort fehlt, fehlt überall.
 
-Alle Beispiele sind verlinkt, damit sich jeder selbst ein Bild machen kann. Mediatheken nehmen
+Alle nachfolgenden Beispiele sind verlinkt, damit sich jeder selbst ein Bild machen kann. Mediatheken nehmen
 Sendungen nach Ablauf der Rechte wieder heraus; ein Link kann deshalb irgendwann ins Leere
-führen. Stand der Beispiele: 30.09.2026.
+führen. Zum Zeitpunkt der erstellung dieses Textes haben die Links funktioniert (30.09.2026).
 
 ---
 
 ## Was man findet, wenn man hinsieht
 
 Für sich genommen schreibt jeder Sender meist einheitlich. Das Durcheinander entsteht
-zwischen den Sendern – und auf dem Weg in die MediathekView-Filmliste. Jedes der folgenden
+zwischen den Sendern und später dann auch auf dem Weg in die MediathekView-Filmliste. Jedes der folgenden
 Beispiele ist echt.
 
 ### Ein Tatort, vier Einträge, drei Schreibweisen – und ein falsches Versprechen
@@ -188,8 +188,8 @@ bei der Serie „[Soul Shift](https://www.ardmediathek.de/video/MDU1NjQyNGEtNGU4
 Und ARTE benennt dieselbe Fassung je nach Sprache der Anfrage anders: „OmU-POL“ auf Deutsch,
 „POL“ auf Polnisch.
 
-Diese Aufstellung ist sicher nicht vollständig. Sie beruht auf eigener Untersuchung, nicht auf
-Dokumentation – denn eine solche gibt es nicht.
+Diese Aufstellung ist sicher nicht vollständig. Sie beruht auf eigener Untersuchung und auf Stichproben. 
+Auf eine Dokumentation kann sie deshalb nicht zurückgreifen, weil sie nicht öffentlich angeboten wird.
 
 ---
 
@@ -204,7 +204,9 @@ Zustände:
 - **ungeprüft** – niemand hat gefragt
 
 Die meisten Suchen kennen nur „gefunden“ und „nicht gefunden“ und machen aus jedem
-„ungeprüft“ stillschweigend ein „nein“. Steht auf einer Speisekarte nichts von Nüssen,
+„ungeprüft“ stillschweigend ein „nein“. 
+
+Steht auf einer Speisekarte nichts von Nüssen,
 verlässt sich niemand darauf, dass das Gericht nussfrei ist. Steht in der
 MediathekView-Filmliste nichts von einer Hörfassung, bleibt jedem Programm nur, genau das anzunehmen.
 
@@ -217,8 +219,7 @@ Mediathek scrollen kann, erfährt nie, dass eine Hörfassung morgen weg ist.
 ## Was die Messung zeigt – in Kürze
 
 Eigene Messung, Stand 30.09.2026: die MediathekView-Filmliste und
-12.561 einzelne Nachfragen bei den Sendern. Gezählt werden **Sendungen**, nicht Einträge –
-wer Einträge zählt, hält jede Doublette für eine Lücke.
+12.561 einzelne Nachfragen bei den Sendern. Gezählt wird jede Sendung einmal, nicht jeder Eintrag. Eine Folge steht oft zweimal in der MediathekView-Filmliste, als „Donuts“ und als „Donuts (Audiodeskription)“. Wer die Einträge einzeln prüft, findet beim ersten keinen Hinweis und meldet eine fehlende Kennzeichnung – obwohl die Hörfassung gleich daneben steht.
 
 - **Keine** Sendung mit Hörfassung in der Sprache ihres Kanals ist in der
   MediathekView-Filmliste ganz unauffindbar (0 von 441) – aber vier nur unter einem anderen Sender, Thema oder Folgentitel.
@@ -243,9 +244,10 @@ rund 3 % der abfragbaren Adressen ab.
 | **beim Sender** | verschiedene Formen der Hörfassung; unterschiedliche Feldnamen und Sprachcodes; Hörfassung nur in einer Fremdsprache; „Klare Sprache“ als verwechselbarer Name; keine offene, dokumentierte Schnittstelle | die Sender |
 | **auf dem Weg zu den Programmen** | Merkmal nur als Titelwort; vertauschte oder leere Zusätze; kein Feld für Tonspuren, Ablaufdatum oder ein geprüftes Nein; verlorene Untertitel; dieselbe Sendung unter verschiedenen Sendern, Themen oder Folgennummern | alle, die Mediathekdaten sammeln und weitergeben |
 
-Die MediathekView-Filmliste wird seit über fünfzehn Jahren ehrenamtlich gepflegt, und ohne sie
-gäbe es für Dritte gar keinen Zugang zu den Mediatheken. Diese Analyse will sie nicht ersetzen,
-sondern sucht nach Wegen zur Ergänzung.
+Die MediathekView-Filmliste wird seit über 18 Jahren ehrenamtlich gepflegt, und ohne sie
+gäbe es für Dritte gar keinen Zugang zu den Mediatheken. Die Schnittstellen der Sender ändern sich regelmäßig, dann muss das Team nachsteuern. Diese Menschen leisten eine wertvolle Arbeit, weil sie den Betrieb und die Qualität der Inhalte im Blick haben.
+
+Diese Analyse will die Filmliste nicht ersetzen, sondern sucht nach Wegen zur Ergänzung.
 
 ---
 
@@ -280,14 +282,16 @@ bestehende Programm nutzen kann:
 - als freie Software zum **Selbstbetreiben**, bis hinunter auf einen Raspberry Pi
 
 Der größte Teil der Arbeit ist dabei nicht Programmierung. Er besteht darin, jeden der oben
-gezeigten Fälle beim Sender und in der MediathekView-Filmliste zu finden, zu prüfen und sauber einzuordnen.
+gezeigten Fälle beim Sender und in der MediathekView-Filmliste zu finden, zu prüfen und sauber 
+einzuordnen. All das mit dem Ziel, die Informationen in eine einheitliche Darstellung 
+zu überführen, die andere Projekte dann zuverlässig nutzen können
 
 ---
 
 ## Wer dahintersteht
 
 Frank Börncke, freiberuflicher Softwareentwickler. Seit Jahren betreibe ich kostenlos
-„Meine Mediathek“, eine Sprachanwendung, mit der man die Mediatheken von ARD, ZDF und ARTE
+„Meine Mediathek“, eine Alexa-Sprachanwendung, mit der man die Mediatheken von ARD, ZDF und ARTE
 per Sprache durchsuchen und abspielen kann, auch ohne Bildschirm. Im mehrjährigen Betrieb
 habe ich gelernt, wo die Grenzen der heutigen Datenlage liegen, gerade beim barrierefreien
 Zugang.
