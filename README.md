@@ -16,8 +16,8 @@ Mediatheken senderübergreifend durchsucht, rät auf seine Weise, und der Mensch
 der Kette findet – oder eben nicht.
 
 Dieses Repository dokumentiert das Problem. Die Analyse beruht auf einer eigenen
-Messung: rund 594.000 Einträge aus den Mediatheken und rund 2.200 einzelne Nachfragen bei
-den Sendern, Stand 25.09.2026. Die Beispiele sind verlinkt, damit sich jeder selbst ein
+Messung: rund 594.000 Einträge aus den Mediatheken und rund 12.600 einzelne Nachfragen bei
+den Sendern, Stand 30.09.2026. Die Beispiele sind verlinkt, damit sich jeder selbst ein
 Bild machen kann. Mediatheken nehmen Sendungen nach Ablauf der Rechte wieder heraus;
 ein Link kann deshalb irgendwann ins Leere führen.
 
@@ -28,8 +28,8 @@ ein Link kann deshalb irgendwann ins Leere führen.
 Der Medienstaatsvertrag bestimmt, was ein barrierefreies Angebot ist: eines, das für
 Menschen mit Behinderungen **auffindbar**, zugänglich und nutzbar ist – in dieser
 Reihenfolge (§ 2 Abs. 2 Nr. 30 MStV). Die Sender haben in den vergangenen Jahren viel
-produziert: Allein vom Tatort gibt es in den Mediatheken derzeit fast 400 Folgen mit
-Hörfassung.
+produziert: Allein vom Tatort sind derzeit 385 Folgen als Hörfassung gekennzeichnet
+(Stand 30.09.2026, gezählt nach Sendungen).
 
 Aber eine Fassung, die niemand findet, hilft niemandem. Und hier liegt die eigentliche
 Asymmetrie: Wenn ein technisches Format bricht, merkt es sofort jemand, und es gibt eine
@@ -151,7 +151,7 @@ Fassung, die man nicht verstehen kann.
 
 Sendungen verschwinden wieder aus den Mediatheken, manche nach Tagen, manche nach Jahren.
 Wer eine Hörfassung sucht, will wissen, ob sie morgen noch da ist. Die Sender kennen das
-Ablaufdatum: Für 1.810 der 2.248 befragten Adressen nennen sie eines in der Stichprobe.
+Ablaufdatum: Für 9.668 der 12.561 befragten Adressen nennen sie eines in der Stichprobe.
 Die verbreitete senderübergreifende Liste hat dafür kein Feld.
 
 ### 8. Ja, nein – und ungeprüft
@@ -177,7 +177,7 @@ lösen. Diese Analyse trennt deshalb strikt:
 
 | Ursprung | Beispiele | Wer könnte es lösen |
 |---|---|---|
-| **an der Quelle, beim Sender** | verschiedene Formen der Hörfassung; unterschiedliche Feldnamen und Sprachcodes; Hörfassung nur in einer Fremdsprache; „Klare Sprache“ als verwechselbarer Name; keine offene, dokumentierte Schnittstelle | die Sender |
+| **beim Sender** | verschiedene Formen der Hörfassung; unterschiedliche Feldnamen und Sprachcodes; Hörfassung nur in einer Fremdsprache; „Klare Sprache“ als verwechselbarer Name; keine offene, dokumentierte Schnittstelle | die Sender |
 | **auf dem Weg zu den Programmen** | Merkmal nur als Titelwort; kein Feld für Tonspuren, Ablaufdatum oder ein geprüftes Nein; verlorene Untertitel; dieselbe Sendung unter verschiedenen Sendern, Themen oder Folgennummern | alle, die Mediathekdaten aggregieren und weitergeben |
 
 Viele unabhängige Programme beziehen ihre Mediathekdaten aus derselben gemeinsamen Liste,
@@ -190,19 +190,22 @@ Programm, das Mediatheken durchsuchbar machen will, stößt darauf.
 
 ## Was die Messung zeigt – und was nicht
 
-Stand 25.09.2026. Gezählt werden **Sendungen**, nicht Einträge.
+Stand 30.09.2026. Gezählt werden **Sendungen**, nicht Einträge.
 
 - **Größe des Angebots:** rund eine halbe Million Sendungen, davon rund 330.000 mit
   mindestens fünf Minuten Länge.
-- **Stichprobe:** 2.248 Adressen bei ARD, ZDF und ARTE einzeln nachgefragt. Laut Sender
-  haben 465 der zugehörigen Sendungen eine Hörfassung.
-- **Hörfassung in der Sprache des Kanals:** Bei 447 Sendungen. Jede davon ist in der
+- **Stichprobe:** 12.561 Adressen über die Schnittstellen von ARD, ZDF und ARTE einzeln
+  nachgefragt. Laut Sender haben 459 der zugehörigen Sendungen eine Hörfassung.
+- **Hörfassung in der Sprache des Kanals:** Bei 441 Sendungen. Jede davon ist in der
   verbreiteten Liste irgendwo gekennzeichnet – bei vier allerdings nur unter einem anderen
   Sender, Thema oder Folgentitel.
 - **Hörfassung nur in anderer Sprache:** 18 Sendungen, ein Angebot des Senders.
-- **Klare Sprache:** 80 Einträge als eigene Datei, dazu 81 Adressen, an denen sie als
+- **Klare Sprache:** 81 Einträge als eigene Datei, dazu 81 Adressen, an denen sie als
   Tonspur in keinem Titel steht.
-- **Einfache Sprache:** 473 Einträge, nur über das Titelwort auffindbar.
+- **Einfache Sprache:** 476 Einträge, nur über das Titelwort auffindbar.
+- **Geprüftes Nein:** Für 9.466 Sendungen hat der Sender ausdrücklich verneint, dass es eine
+  Hörfassung gibt. In der verbreiteten Liste sehen sie aus wie Sendungen, nach denen nie
+  jemand gefragt hat.
 
 **Was das bedeutet:** Wo eine Hörfassung in der Sprache des Kanals vorliegt, wird sie in
 der Stichprobe fast immer irgendwie gekennzeichnet. Die Häufigkeit der Lücke ist nicht das
@@ -212,12 +215,14 @@ steckt und in welcher Sprache eine Fassung vorliegt.
 
 **Was die Zahlen nicht sagen:** Die Stichprobe ist nicht repräsentativ.
 
-- **Ein Drittel ist Tatort.** 744 der 2.248 befragten Adressen gehören zum Tatort, weil die
-  Messung dort begann. Der Tatort ist eine der am besten versorgten Reihen überhaupt.
-- Die Stichprobe liegt deshalb deutlich dichter an Sendungen mit Hörfassung als der
-  Gesamtbestand.
-- Sie deckt weniger als 1 % der abfragbaren Adressen ab und nur drei Sender. KiKA, 3sat,
-  PHOENIX, SR und DW sind noch gar nicht angebunden.
+- **Sie besteht aus gezielten Läufen, nicht aus einer Zufallsauswahl:** dem Tatort
+  (741 Adressen, eine der am besten versorgten Reihen überhaupt), den jeweils neuesten
+  Adressen und dem ganzen Sender PHOENIX, soweit er in der ARD-Mediathek steht (10.313
+  Adressen, darin keine einzige Hörfassung). Die Sendungen mit Hörfassung stammen zu
+  knapp der Hälfte aus dem Tatort.
+- Sie deckt rund 3 % der abfragbaren Adressen ab, über drei Anbindungen (ARD-Mediathek,
+  ZDF, ARTE). KiKA und 3sat sind noch nicht angebunden, PHOENIX und SR nur, soweit ihre
+  Sendungen in der ARD-Mediathek stehen.
 
 ---
 
@@ -249,14 +254,14 @@ bestehende Programm nutzen kann:
 - mit **ja, nein und ungeprüft**, und mit der ehrlichen Angabe, wie vollständig eine
   Antwort ist
 - ausgegeben in den anerkannten Standards, statt ein eigenes Format zu erfinden;
-- aus öffentlich erreichbaren Quellen, **schonend** erhoben: Nachfragen beim Sender nur
+- aus öffentlich erreichbaren Daten, **schonend** erhoben: Nachfragen beim Sender nur
   für Neues, begrenzt viele Serveranfragen pro Zeit, nie parallel
 - ohne eigenen Bestand an Inhalten: keine Videos, keine Untertitel, nur Aussagen über
   Sendungen
 - als freie Software zum **Selbstbetreiben**, bis hinunter auf einen Raspberry Pi. Eine 
   solche Lösung braucht keine Rechenpower sondern Datenqualität und -integrität. Denn 
   der größte Teil der Arbeit ist nicht Programmierung. Er besteht darin, jeden dieser
-  Fälle an der Quelle zu identifizieren, zu prüfen und sauber einzuordnen.
+  Fälle beim Sender und in der Filmliste zu identifizieren, zu prüfen und sauber einzuordnen.
 
 ---
 
@@ -270,8 +275,9 @@ Zugang.
 
 Dieses Vorhaben hat keine Gewinnabsicht. Es versteht sich als **Diskussionsbeitrag**: Es
 will zeigen, dass Auffindbarkeit technisch möglich ist, und liefert Zahlen, wo bisher
-niemand welche hatte. Die Einzelteile einer Lösung sind bekannt. Es muss sich nur jemand
-darum kümmern.
+niemand welche hatte. Die Standards gibt es, die Angaben bei den Sendern auch. Was fehlt,
+ist die Schicht dazwischen: geprüfte Auskünfte, auch ein Nein, gezählt nach Sendungen und
+mit der Angabe, wie vollständig sie sind.
 
 **Kontakt und Hinweise** sind willkommen, besonders von Menschen, die Hörfassungen,
 Gebärdensprache oder Klare Sprache selbst nutzen, und von Projekten, die Mediathekdaten
@@ -279,5 +285,5 @@ verarbeiten.
 
 ---
 
-*Alle Zahlen: eigene Messung, Stand 25.09.2026. Die Mediathekdaten ändern sich täglich. 
+*Alle Zahlen: eigene Messung, Stand 30.09.2026. Die Mediathekdaten ändern sich täglich. 
 Die Links in die Mediatheken haben zum Zeitpunkt der Veröffentlichung funktioniert.*
