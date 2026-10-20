@@ -87,16 +87,26 @@ Hörfassung, Audiodeskription, Hörfilm: dasselbe Merkmal, dreimal anders, in ei
 ### Die Hörfassung heißt „internationaler Ton“
 
 Beim Tatort „[Donuts](https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL3RhdG9ydC8yMDIzLTA0LTAyXzIwLTE1LU1FU1o)“
-liegen normale Fassung und Hörfassung als zwei Dateien auf einer Seite. Die Datei mit der
-Hörfassung trägt im Namen **„internationalerton“**.
+liegen normale Fassung und Hörfassung als zwei Dateien auf derselben Seite. Sichtbar ist
+das nur in der Adresse der Videodatei: Die
+[normale Fassung](https://ctv-videos.daserste.de/int/2023/03/22/f22a2099-ac0e-4718-9616-a3ee474cfe7f/JOB_568979__sendeton_1280x720-50p-3200kbit.mp4)
+heißt `…_sendeton_…`, die
+[Hörfassung](https://ctv-videos.daserste.de/int/2023/03/22/f22a2099-ac0e-4718-9616-a3ee474cfe7f/JOB_568980__internationalerton_1280x720-50p-3200kbit.mp4)
+`…_`**`internationalerton`**`_…`.
 
-Und dieselbe Sache kommt in ganz verschiedenen Formen daher: als eigene Datei auf derselben
-Seite (Donuts), als eigene Seite mit eigener Adresse (Tatort „Unter Feuer“, MDR:
+Beim Tatort „Haus der Toten – Tod am Rennsteig“ heißt die Datei mit der Hörfassung
+`…_audiodeskription_…`. Beim Tatort „Licht“ (HR) heißen alle drei Dateien `…_sendeton_…`:
+die normale Fassung, die Hörfassung und die Fassung mit Gebärdensprache. Dieselbe Sache,
+drei Namen.
+
+Manche Häuser legen außerdem eine zweite Seite an, deren Adresse auf „/audiodeskription“
+endet (Tatort „Licht“, HR:
+[normal](https://www.ardmediathek.de/video/MzlkYWUyNGQtYTliMi00ZTVkLTg5MzMtMWU3NTk4ZDJlYzYz),
+[„/audiodeskription“](https://www.ardmediathek.de/video/MzlkYWUyNGQtYTliMi00ZTVkLTg5MzMtMWU3NTk4ZDJlYzYzL2F1ZGlvZGVza3JpcHRpb24);
+Tatort „Unter Feuer“, MDR:
 [normal](https://www.ardmediathek.de/video/Y3JpZDovL21kci5kZS9zZW5kdW5nLzI4MjA0MC81MTQ0NzgtNDk0NDk5),
-[Hörfassung](https://www.ardmediathek.de/video/Y3JpZDovL21kci5kZS9zZW5kdW5nLzI4MjA0MC81MTQ0NzgtNDk0NDk5L2F1ZGlvZGVza3JpcHRpb24)),
-oder als umschaltbare Tonspur im Player – und zusätzlich als eigene Seite (Tatort „Licht“, HR:
-[normale Seite mit Tonspur](https://www.ardmediathek.de/video/MzlkYWUyNGQtYTliMi00ZTVkLTg5MzMtMWU3NTk4ZDJlYzYz),
-[eigene Seite](https://www.ardmediathek.de/video/MzlkYWUyNGQtYTliMi00ZTVkLTg5MzMtMWU3NTk4ZDJlYzYzL2F1ZGlvZGVza3JpcHRpb24)).
+[„/audiodeskription“](https://www.ardmediathek.de/video/Y3JpZDovL21kci5kZS9zZW5kdW5nLzI4MjA0MC81MTQ0NzgtNDk0NDk5L2F1ZGlvZGVza3JpcHRpb24)).
+Beide Seiten liefern dieselben Dateien. Wer Seiten zählt, sieht zwei Sendungen, wo eine ist.
 
 ### Wer schreibt das Wort in den Titel?
 
@@ -130,11 +140,12 @@ Im Datenfeld der ARD-Mediathek heißt sie schlicht `DGS`.
 
 Beim WDR steht Klare Sprache als eigene Datei mit „(klare Sprache)“ im Titel, etwa beim Tatort
 „[Die letzten Menschen von Köln](https://www.ardmediathek.de/video/Y3JpZDovL3dkci5kZS9CZWl0cmFnLXNvcGhvcmEtYjM2NzBlNDMtOTBmMC00YTQxLWE5M2QtNTlhYWU3NGI0N2Ew)“.
-In der ARD-Mediathek steckt sie außerdem als Tonspur im Player, etwa bei
+In der ARD-Mediathek liegt sie außerdem als eigene Datei neben der normalen Fassung, etwa bei
 „[Haus der Toten – Tod am Rennsteig](https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEX2E2MjNhM2FmLTA2MTctNDA3Mi1hODFiLWZiZjVhMjE5NGVlM19nYW56ZVNlbmR1bmc)“
-– und diese Tonspur wird in **keinem einzigen Titel** erwähnt. Eine Datei kann auch beides
-zugleich sein:
+(`…_klaresprache_…`). In der MediathekView-Filmliste kommt diese Datei **nicht vor** –
+kein einziger Eintrag verweist auf eine solche Datei. Eine Datei kann auch beides zugleich sein:
 „[Tatort: Diesmal ist es anders **(klare Sprache) (Audiodeskription)**](https://www.ardmediathek.de/video/Y3JpZDovL3dkci5kZS9CZWl0cmFnLXNvcGhvcmEtNWQ1ZWYzYWMtYjFiZS00ODU5LThhMDAtYjk3ZGMzZmFmYzFm)“.
+
 Eine Suche, die beide Begriffe zusammenwirft, schickt einen schwerhörigen Menschen zu
 Nachrichten in vereinfachter Sprache.
 
