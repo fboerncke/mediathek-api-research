@@ -1,4 +1,4 @@
-# Hörfassungen finden
+# Barrierefrei produziert – aber nicht barrierefrei zu finden
 
 **Barrierefreie Fassungen in den öffentlich-rechtlichen Mediatheken: produziert, bezahlt – und ohne verlässliche Auskunft.**
 
@@ -21,6 +21,11 @@ den Links zum Video und zur Sendungsseite. Rund 80 öffentliche Projekte bauen d
 
 Was in dieser Filmliste steht, sieht also fast jedes Programm, das Mediatheken senderübergreifend durchsucht. 
 Umgekehrt gilt: Was dort fehlt, fehlt überall.
+
+Wer bemerkt den Fehler? Fast niemand. Wer sehen kann, braucht die Hörfassung nicht und sucht nicht nach ihr. 
+Wer sie braucht, bekommt von seinem Programm ein „gibt es nicht“ – und kann nicht selbst nachsehen, ob das 
+stimmt. Es gibt keine Fehlermeldung, und wer nicht weiß, dass etwas fehlt, beschwert sich nicht. So bleibt 
+ein bezahltes Angebot bei den Menschen aus, für die es gemacht ist, und in keiner Statistik taucht das auf.
 
 Alle nachfolgenden Beispiele sind verlinkt, damit sich jeder selbst ein Bild machen kann. Mediatheken nehmen
 Sendungen nach Ablauf der Rechte wieder heraus; ein Link kann deshalb irgendwann ins Leere
@@ -68,8 +73,8 @@ In der MediathekView-Filmliste steht es umgekehrt:
 | [/audiodeskription](https://www.ardmediathek.de/video/Y3JpZDovL3dkci5kZS9CZWl0cmFnLXNvcGhvcmEtZGRiYzBlYWQtNjNhMi00MTY4LThlZWYtZmE5NGUxNzM0NmY5L2F1ZGlvZGVza3JpcHRpb24) | „Siebte Etage (2024) **(Gebärdensprache)**“ |
 | [/gebaerdensprache](https://www.ardmediathek.de/video/Y3JpZDovL3dkci5kZS9CZWl0cmFnLXNvcGhvcmEtZGRiYzBlYWQtNjNhMi00MTY4LThlZWYtZmE5NGUxNzM0NmY5L2dlYmFlcmRlbnNwcmFjaGU) | „Siebte Etage (2024) **(Audiodeskription)**“ |
 
-Zur Beruhigung: Beide Seiten liefern ohnehin alle drei Fassungen – normal, mit Hörfassung,
-mit Gebärdensprache. Man muss es nur wissen. Solche vertauschten Einträge stehen über
+Diesmal geht es gut aus, weil beide Seiten ohnehin alle drei Fassungen liefern. 
+Verlassen kann sich darauf niemand: Solche vertauschten Einträge stehen über 
 hundertmal in der MediathekView-Filmliste (109 am 30.09.2026).
 
 ### Drei Wörter für eine Sache – in einem einzigen Eintrag
@@ -282,7 +287,12 @@ Gute Ideen schaffen es also bislang nicht in den Hauptzweig und in den Betrieb. 
   EPUB Accessibility 1.1).
 
 Was fehlt, ist die Übersetzung zwischen den Welten. Und wo ein Standard schweigt, muss man das
-sagen: schema.org kennt zum Beispiel keinen Wert für Klare Sprache.
+klar sagen: schema.org kennt zum Beispiel keinen Wert für Klare Sprache.
+
+**Zuständig ist niemand**. Die Sender bauen Mediatheken, keine Datenquelle für andere Programme.
+MediathekView sammelt ehrenamtlich und muss sein Format stabil halten. Die Programme nehmen, 
+was in der Filmliste steht, und raten den Rest. Jeder Beteiligte handelt nachvollziehbar.
+Zusammen ergibt das eine Lücke, für die sich niemand zuständig fühlt.
 
 ---
 
@@ -304,18 +314,23 @@ bestehende Programm nutzen kann:
 
 Ein großer Teil der Arbeit ist dabei keine Programmierung. Er besteht darin, möglichst jeden 
 der oben gezeigten Fälle beim Sender und in der Filmliste zu finden, zu prüfen und sauber 
-einzuordnen. Das Ziel: eine einheitliche Darstellung, auf die sich andere Projekte verlassen können.
+einzuordnen. Das Ziel: eine einheitliche Darstellung als API, auf die sich andere Projekte 
+verlassen können.
+
+Diese Lücke schließt sich nicht von selbst. Die Standards gibt es, die Angaben bei den 
+Sendern auch. Es fehlt jemand, der beides zusammenführt und dafür geradesteht, dass die 
+Auskunft stimmt – auch wenn sie „nein“ lautet.
 
 ---
 
 ## Wer dahintersteht
 
 Ich bin Frank Börncke, freiberuflicher Softwareentwickler. Seit 2020 betreibe ich kostenlos
-„[Meine Mediathek](www.meinemediathek.de)“, eine Alexa-Sprachanwendung, mit der man die 
+„[Meine Mediathek](https://www.meinemediathek.de)“, eine Alexa-Sprachanwendung, mit der man die 
 Mediatheken von ARD, ZDF und ARTE
 per Sprache durchsuchen und abspielen kann, auch ohne Bildschirm. In dem mehrjährigen Betrieb
 habe ich gelernt, wo die Grenzen der heutigen Datenlage liegen, gerade beim barrierefreien
-Zugang 
+Zugang. 
 
 Dieses Vorhaben hat keine Gewinnabsicht. Es versteht sich als **Diskussionsbeitrag**: Es 
 soll zeigen, dass Auffindbarkeit technisch möglich ist, und es liefert Zahlen, wo bisher 
