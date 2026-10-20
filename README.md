@@ -1,6 +1,6 @@
 # Barrierefrei produziert – aber nicht barrierefrei zu finden
 
-**Barrierefreie Fassungen in den öffentlich-rechtlichen Mediatheken: produziert, bezahlt – und ohne verlässliche Auskunft.**
+**Barrierefreie Fassungen in den öffentlich-rechtlichen Mediatheken: produziert, bezahlt und ohne verlässliche Auskunft.**
 
 ARD, ZDF und ARTE produzieren Sendungen mit Hörfassung, in Gebärdensprache, in Einfacher Sprache und mit Klarer Sprache. Eine Hörfassung (auch Audiodeskription oder Hörfilm genannt) ist eine zusätzliche Tonspur, die beschreibt, was im Bild passiert. Bezahlt werden all diese Fassungen aus dem Rundfunkbeitrag. Gemacht werden sie für Menschen, die sie brauchen: blinde und sehbehinderte Menschen, gehörlose und schwerhörige Menschen, Menschen, die auf vereinfachte Sprache angewiesen sind.
 
@@ -22,10 +22,19 @@ den Links zum Video und zur Sendungsseite. Rund 80 öffentliche Projekte bauen d
 Was in dieser Filmliste steht, sieht also fast jedes Programm, das Mediatheken senderübergreifend durchsucht. 
 Umgekehrt gilt: Was dort fehlt, fehlt überall.
 
-Wer bemerkt den Fehler? Fast niemand. Wer sehen kann, braucht die Hörfassung nicht und sucht nicht nach ihr. 
-Wer sie braucht, bekommt von seinem Programm ein „gibt es nicht“ – und kann nicht selbst nachsehen, ob das 
-stimmt. Es gibt keine Fehlermeldung, und wer nicht weiß, dass etwas fehlt, beschwert sich nicht. So bleibt 
-ein bezahltes Angebot bei den Menschen aus, für die es gemacht ist, und in keiner Statistik taucht das auf.
+Bei der Hörfassung geht das meistens gut, weil auf dem Weg in die Filmliste zumindest ein entsprechendes 
+Wort in den Titel geschrieben wird (wenn auch kjein eindeutiges). Anderes kommt gar nicht an. Die ARD-Mediathek
+liefert Klare Sprache oft als zusätzliche Datei neben der normalen Fassung. In der Filmliste steht keine 
+einzige dieser Dateien. ARTE bietet Untertitel für Hörgeschädigte an. In der Filmliste steht keine einzige 
+Adresse dazu. Die Sender halten diese Angaben bereit, jeder in seinem eigenen Format und ohne offene 
+Dokumentation. Die Filmliste übernimmt sie nicht, und die Programme, die auf ihr aufbauen, bekommen sie 
+deshalb auch nicht.
+
+Wer bemerkt den Fehler? Fast niemand. Wer gut sieht und hört, braucht diese Fassungen nicht und sucht nicht 
+nach ihnen. Wer sie braucht, bekommt von seinem Programm ein „gibt es nicht“ und kann nicht selbst 
+prüfen, ob das stimmt. Es gibt für dieses Szenario keine Fehlermeldung, und wer nicht weiß, dass etwas 
+fehlt, beschwert sich nicht. So bleibt ein bezahltes Angebot bei den Menschen unsichtbar, für die es 
+gemacht ist, und in keiner Statistik taucht das auf.
 
 Alle nachfolgenden Beispiele sind verlinkt, damit sich jeder selbst ein Bild machen kann. Mediatheken nehmen
 Sendungen nach Ablauf der Rechte wieder heraus; ein Link kann deshalb irgendwann ins Leere
@@ -43,7 +52,7 @@ Ein Hinweis vorab: „Sender“ meint in den Tabellen das Senderfeld der Filmlis
 stehen die ARD und ihre Landesrundfunkanstalten wie der BR nebeneinander, obwohl 
 alles aus der ARD-Mediathek kommt.
 
-### Ein Tatort, vier Einträge, drei Schreibweisen – und ein falsches Versprechen
+### Ein Tatort, vier Einträge, drei Schreibweisen und ein falsches Versprechen
 
 „Die ewige Welle“ steht viermal in der Filmliste:
 
@@ -66,18 +75,18 @@ Vom Tatort „Siebte Etage (2024)“ gibt es in der ARD-Mediathek eine Seite, de
 alles: Die erste heißt „Siebte Etage (2024) (Audiodeskription)“, die zweite
 „Siebte Etage (2024) (mit Gebärdensprache)“.
 
-In der MediathekView-Filmliste steht es umgekehrt:
+In der Filmliste steht es umgekehrt:
 
-| Adresse endet auf | Titel in der MediathekView-Filmliste |
+| Adresse endet auf | Titel in der Filmliste |
 |---|---|
 | [/audiodeskription](https://www.ardmediathek.de/video/Y3JpZDovL3dkci5kZS9CZWl0cmFnLXNvcGhvcmEtZGRiYzBlYWQtNjNhMi00MTY4LThlZWYtZmE5NGUxNzM0NmY5L2F1ZGlvZGVza3JpcHRpb24) | „Siebte Etage (2024) **(Gebärdensprache)**“ |
 | [/gebaerdensprache](https://www.ardmediathek.de/video/Y3JpZDovL3dkci5kZS9CZWl0cmFnLXNvcGhvcmEtZGRiYzBlYWQtNjNhMi00MTY4LThlZWYtZmE5NGUxNzM0NmY5L2dlYmFlcmRlbnNwcmFjaGU) | „Siebte Etage (2024) **(Audiodeskription)**“ |
 
 Diesmal geht es gut aus, weil beide Seiten ohnehin alle drei Fassungen liefern. 
 Verlassen kann sich darauf niemand: Solche vertauschten Einträge stehen über 
-hundertmal in der MediathekView-Filmliste (109 am 30.09.2026).
+hundertmal in der Filmliste (109 am 30.09.2026).
 
-### Drei Wörter für eine Sache – in einem einzigen Eintrag
+### Drei Wörter für eine Sache in einem einzigen Eintrag
 
 Bei KiKA heißt eine Folge von „Addie und wie sie die Welt fühlt“
 „[5. Fatale Partys **(Hörfassung)**](https://www.kika.de/addie-und-wie-sie-die-welt-fuehlt/videos/audiodeskription/fatale-partys-als-hoerfilm-100)“.
@@ -111,16 +120,16 @@ Beide Seiten liefern dieselben Dateien. Wer Seiten zählt, sieht zwei Sendungen,
 ### Wer schreibt das Wort in den Titel?
 
 Oft nicht der Sender. In der ARD-Mediathek heißt die Folge schlicht „Donuts“; erst auf dem
-Weg in die MediathekView-Filmliste wird daraus „Donuts (Audiodeskription)“. Bei funk schreibt der
-Sender „… | Hörfassung | 100percentme“, in der MediathekView-Filmliste steht daraus
+Weg in die Filmliste wird daraus „Donuts (Audiodeskription)“. Bei funk schreibt der
+Sender „… | Hörfassung | 100percentme“, in der Filmliste steht daraus
 „[… | Audiodeskription | 100percentme](https://www.ardmediathek.de/video/Y3JpZDovL2Z1bmsubmV0LzEyMDA0L3ZpZGVvLzE2NTA2NTM)“
 – das Wort wird mitten im Titel ausgetauscht. Und im spanischen ARTE-Kanal heißt die Serie
 „[Camaradas (2/8) **(Originalversion mit Untertitel)**](https://www.arte.tv/es/videos/123309-002-A/camaradas-2-8/)“:
 ein deutscher Zusatz an einem spanischen Titel.
 
-Manchmal bleibt von einer solchen Ersetzung nur eine Hülle. In der MediathekView-Filmliste
+Manchmal bleibt von einer solchen Ersetzung nur eine Hülle. In der Filmliste
 stehen Titel wie
-„Eisige Schatten – Folge 3 (S01/E03) **()** (Audiodeskription)“ – leere Klammern, der Rest
+„Eisige Schatten – Folge 3 (S01/E03) **()** (Audiodeskription)“: leere Klammern, der Rest
 einer automatischen Umbenennung.
 
 ### Gebärdensprache in fünf Schreibweisen
@@ -142,7 +151,7 @@ Beim WDR steht Klare Sprache als eigene Datei mit „(klare Sprache)“ im Titel
 „[Die letzten Menschen von Köln](https://www.ardmediathek.de/video/Y3JpZDovL3dkci5kZS9CZWl0cmFnLXNvcGhvcmEtYjM2NzBlNDMtOTBmMC00YTQxLWE5M2QtNTlhYWU3NGI0N2Ew)“.
 In der ARD-Mediathek liegt sie außerdem als eigene Datei neben der normalen Fassung, etwa bei
 „[Haus der Toten – Tod am Rennsteig](https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEX2E2MjNhM2FmLTA2MTctNDA3Mi1hODFiLWZiZjVhMjE5NGVlM19nYW56ZVNlbmR1bmc)“
-(`…_klaresprache_…`). In der MediathekView-Filmliste kommt diese Datei **nicht vor** –
+(`…_klaresprache_…`). In der Filmliste kommt diese Datei **nicht vor** –
 kein einziger Eintrag verweist auf eine solche Datei. Eine Datei kann auch beides zugleich sein:
 „[Tatort: Diesmal ist es anders **(klare Sprache) (Audiodeskription)**](https://www.ardmediathek.de/video/Y3JpZDovL3dkci5kZS9CZWl0cmFnLXNvcGhvcmEtNWQ1ZWYzYWMtYjFiZS00ODU5LThhMDAtYjk3ZGMzZmFmYzFm)“.
 
@@ -159,17 +168,18 @@ Hörfassung nur auf **Französisch**.
 
 „[Die Prinzessin von Cleve](https://www.arte.tv/de/videos/025621-000-A/die-prinzessin-von-cleve/)“
 hat bei ARTE zwei Hörfassungen, eine deutsche und eine französische. Auf der deutschen Seite
-heißt die deutsche „Deutsch (Hörfilm)“ – ihre Kurzbezeichnung lautet aber **„AD (frz.)“**,
+heißt die deutsche „Deutsch (Hörfilm)“. Ihre Kurzbezeichnung lautet aber **„AD (frz.)“**,
 genau wie die der französischen. Auf der
 [französischen Seite](https://www.arte.tv/fr/videos/025621-000-A/la-princesse-de-cleves/)
 heißt dieselbe deutsche Hörfassung „Allemand (audiodescription)“, kurz „AD DE“.
 
-### Untertitel, die es gibt – und die nirgends ankommen
+### Untertitel, die es gibt und die nirgends ankommen
 
 ARTE führt Untertitel ausdrücklich „für Hörgeschädigte“, etwa „Deutsch (Hörgeschädigte)“ beim
-U-Boot. In der MediathekView-Filmliste steht für ARTE **keine einzige** Untertitel-Adresse. Bei
-PHOENIX ist es anders herum: Dort fehlen die Untertitel schon beim Sender – in rund 8.000
-Antworten der ARD-Mediathek zu PHOENIX-Sendungen keine einzige.
+U-Boot. In der Filmliste steht für ARTE **keine einzige** Untertitel-Adresse. Bei
+PHOENIX ist es anders herum: Dort fehlen die Untertitel schon beim Sender: in rund 8.000
+Antworten der ARD-Mediathek zu PHOENIX-Sendungen keine einzige. Immerhin ist da das "Nein" 
+durchgehend korrekt.
 
 ### Wörter, die täuschen
 
@@ -177,7 +187,7 @@ Antworten der ARD-Mediathek zu PHOENIX-Sendungen keine einzige.
 ist ein Beitrag über Hörfilme, aber selbst keiner.
 „[Leichte Sprache braucht fast jeder zehnte Mensch](https://www.ardmediathek.de/video/Y3JpZDovL3N3ci5kZS9hZXgvbzIwNzc3MjE)“
 ist ein Beitrag *über* Leichte Sprache, nicht *in* ihr. Ein verbreitetes Programm wertet schon
-„AD |“ oder „Hörspiel“ im Titel als Hinweis auf eine Hörfassung – und kündigt so
+„AD |“ oder „Hörspiel“ im Titel als Hinweis auf eine Hörfassung und kündigt so
 „[Das Ende von THE WALKING DE**AD |** TOP 5](https://www.ardmediathek.de/video/Y3JpZDovL2Z1bmsubmV0LzExNjY0L3ZpZGVvLzE3NTg4MDk)“
 oder „[Die Pfefferkörner gibt's auch als **Hörspiel**!](https://www.ardmediathek.de/video/Y3JpZDovL25kci5kZS80NzFhMzkyNy0zZTZmLTRhNGYtYTU5Ny02OGI2NGE3ZDU1Yjg)“
 als Hörfassung an.
@@ -203,7 +213,7 @@ anders, und keiner über eine offene, dokumentierte Schnittstelle:
 | PHOENIX | ein Kürzel am Sendetermin (`ut`, `gs`, `zk`) | `visibleTo` |
 
 Die Sprache schreibt die ARD mit drei Buchstaben (`deu`), ARTE mit zwei (`de`). An 16 Adressen
-meldet die ARD-Mediathek statt einer Sprache nur „ov“ – Originalversion, welche auch immer, etwa
+meldet die ARD-Mediathek statt einer Sprache nur „ov“ ("Originalversion"), welche auch immer, etwa
 bei der Serie „[Soul Shift](https://www.ardmediathek.de/video/MDU1NjQyNGEtNGU4ZS00MTg4LTllNWMtNzFiZWE0NjNlNTgy)“.
 Und ARTE benennt dieselbe Fassung je nach Sprache der Anfrage anders: „OmU-POL“ auf Deutsch,
 „POL“ auf Polnisch.
@@ -213,15 +223,15 @@ Vollständig ist diese Aufstellung sicher nicht. Sie beruht auf eigener Untersuc
 
 ---
 
-## Was daraus folgt: Ja, Nein – und ungeprüft
+## Was daraus folgt: Ja, Nein und ungeprüft
 
 Ein Wort im Titel kann nur „ja“ sagen. **Ein fehlendes Wort ist kein Nein.** Steht nichts im
 Titel, weiß man nur, dass nichts dasteht. Ein barrierefreies Merkmal hat deshalb drei
 Zustände:
 
-- **ja** – der Sender bestätigt es, oder es gibt die Datei
-- **nein** – der Sender wurde gefragt und verneint
-- **ungeprüft** – niemand hat gefragt
+- **ja**: der Sender bestätigt es, oder es gibt die Datei
+- **nein**: der Sender wurde gefragt und verneint
+- **ungeprüft**: niemand hat gefragt
 
 Die meisten Suchen kennen nur „gefunden“ und „nicht gefunden“ und machen aus jedem
 „ungeprüft“ stillschweigend ein „nein“. 
@@ -231,28 +241,28 @@ ist. Steht in der Filmliste nichts von einer Hörfassung, bleibt jedem Programm 
 übrig, als genau das anzunehmen.
 
 Dazu kommt die Zeit: Sendungen verschwinden wieder aus den Mediatheken. Die Sender kennen
-das Ablaufdatum, die MediathekView-Filmliste hat dafür kein Feld. Wer nicht selbst durch eine
+das Ablaufdatum, die Filmliste hat dafür kein Feld. Wer nicht selbst durch eine
 Mediathek scrollen kann, erfährt nie, dass eine Hörfassung morgen weg ist.
 
 ---
 
-## Was die Messung zeigt – in Kürze
+## Was die Messung zeigt
 
-Eigene Messung, Stand 30.09.2026: die MediathekView-Filmliste und
-12.561 einzelne Nachfragen bei den Sendern. Gezählt wird jede Sendung einmal, nicht jeder Eintrag. Eine Folge steht oft zweimal in der MediathekView-Filmliste, als „Donuts“ und als „Donuts (Audiodeskription)“. Wer die Einträge einzeln prüft, findet beim ersten keinen Hinweis und meldet eine fehlende Kennzeichnung – obwohl die Hörfassung gleich daneben steht.
+Eigene Messung, Stand 30.09.2026: die Filmliste und
+12.561 einzelne Nachfragen bei den Sendern. Gezählt wird jede Sendung einmal, nicht jeder Eintrag. Eine Folge steht oft zweimal in der Filmliste, als „Donuts“ und als „Donuts (Audiodeskription)“. Wer die Einträge einzeln prüft, findet beim ersten keinen Hinweis und meldet eine fehlende Kennzeichnung, obwohl die Hörfassung gleich daneben steht.
 
 - **Keine** Sendung mit Hörfassung in der Sprache ihres Kanals ist in der
-  MediathekView-Filmliste ganz unauffindbar (0 von 441) – aber vier nur unter einem anderen Sender, Thema oder Folgentitel.
+  Filmliste ganz unauffindbar (0 von 441), aber vier nur unter einem anderen Sender, Thema oder Folgentitel.
 - **18** Sendungen haben eine Hörfassung nur in einer anderen Sprache.
 - Für **9.465** Sendungen hat der Sender ausdrücklich verneint, dass es eine Hörfassung gibt.
-  In der MediathekView-Filmliste sehen sie aus wie Sendungen, nach denen nie jemand gefragt hat.
+  In der Filmliste sehen sie aus wie Sendungen, nach denen nie jemand gefragt hat.
 
 Die Häufigkeit der Lücke ist also nicht das Hauptproblem. Das Hauptproblem ist die
 Konstruktion: Ein Wort im Titel kann nicht sagen, was geprüft fehlt, was bald verschwindet,
 welche Tonspur in einer Datei steckt und in welcher Sprache eine Fassung vorliegt.
 
-Repräsentativ ist die Stichprobe nicht. Sie besteht aus gezielten Läufen – dem Tatort, den 
-jeweils neuesten Adressen und dem ganzen Sender PHOENIX in der ARD-Mediathek – und deckt 
+Repräsentativ ist die Stichprobe nicht. Sie besteht aus gezielten Suchläufen, zum Beispiel nach dem Tatort, den 
+jeweils neuesten Adressen und dem ganzen Sender PHOENIX in der ARD-Mediathek und deckt 
 rund 3 % der abfragbaren Adressen ab. 
 
 ---
@@ -330,7 +340,7 @@ verlassen können.
 
 Diese Lücke schließt sich nicht von selbst. Die Standards gibt es, die Angaben bei den 
 Sendern auch. Es fehlt jemand, der beides zusammenführt und dafür geradesteht, dass die 
-Auskunft stimmt – auch wenn sie „nein“ lautet.
+Auskunft stimmt, auch wenn sie „nein“ lautet.
 
 ---
 
