@@ -13,20 +13,19 @@ jeder für sich: mit eigenen Wörtern, eigenen Datenfeldern, eigenen Auslieferun
 **Es gibt keine offene, dokumentierte Schnittstelle, die senderübergreifend beantwortet,
 welche barrierefreien Fassungen es von einer Sendung gibt.** Das ist die Wurzel. Die Sender
 haben einen gesetzlichen Auftrag zur Barrierefreiheit (dazu unten mehr), und eine gemeinsame
-Auskunft als API-Schnittstelle darüber, was es gibt, wäre der naheliegende Teil davon. So
-eine API gibt es aber in offizieller Form nicht.
+Auskunft als API-Schnittstelle darüber, was es gibt, wäre der naheliegende Teil davon. 
 
-**Zweitens der Weg zu den Programmen.** Wer diese uneinheitlichen Daten an der Quellle 
+**Zweitens der Weg zu den Programmen.** Wer diese uneinheitlichen Daten an der Quelle 
 einsammelt und konsolidiert weitergibt, der muss sie in ein gemeinsames Format bringen,
-so gut es geht. Da Struktur der Daten an der Quelle aber nicht umfassend dokumentiert ist
+so gut es geht. Da die Struktur der Daten an der Quelle aber nicht umfassend dokumentiert ist,
 kann es passieren, dass Information verloren geht oder verdreht wird. 
 
-Mit dieser Situation kämpft heute vor allem in erster Reihe die **[MediathekView-Filmliste](https://mediathekview.de/)** 
-(nachfolgend kurz „die Filmliste“ genannt), die als de-facto Standard für viele Open Source 
-Projekte als einziges Angebot in dieser Qualität diese Arbeit überhaupt leistet und dabei 
-mit genau der Uneinheitlichkeit kämpfen muss, die die Sender hinterlassen. Jedes andere
-Projekt, das die Mediatheken senderübergreifend an der Quelle durchsuchbar machen will, 
-wäre damit genau so gezwungen, auf seine Weise zu raten und zu interpretieren. 
+Mit dieser Situation kämpft heute in erster Reihe die **[MediathekView-Filmliste](https://mediathekview.de/)** 
+(nachfolgend kurz „die Filmliste“ genannt). Sie ist das einzige Angebot, das diese Arbeit in dieser
+Breite und Qualität leistet, und darum der De-facto-Standard für viele Open-Source-Projekte.
+Die Uneinheitlichkeit, mit der sie kämpft, haben die Sender hinterlassen. Jedes andere
+Projekt, das die Mediatheken senderübergreifend an der Quelle durchsuchbar machen wollte,
+wäre genauso gezwungen, auf seine Weise zu raten und zu interpretieren. 
 
 Das ehrenamtliche Projekt MediathekView trägt in der Liste seit gut 18 Jahren mehrmals täglich 
 zusammen, was etwa dreißig Mediatheken anbieten: knapp 594.000 Einträge, jeder mit Sender, 
@@ -34,8 +33,8 @@ Thema, Titel und den Links zum Video und zur Sendungsseite. Wenn undokumentierte
 sich ändern, dann steuern die Maintainer aktiv nach und stellen den fortlaufenden Betrieb sicher.
 Damit leisten die Maintainer eine sehr wertvolle Grundarbeit.
 
-Wer ein Softwareprojekt mit Bezug zu Mediatheken baut, fragt deshalb in der Regeln nicht selbst
-bei den Sendern nach, sondern verwenden die Filmliste als Grundlage. Rund 80 öffentliche Projekte 
+Wer ein Softwareprojekt mit Bezug zu Mediatheken baut, fragt deshalb in der Regel nicht selbst
+bei den Sendern nach, sondern verwendet die Filmliste als Grundlage. Rund 80 öffentliche Projekte 
 bauen darauf auf (eigene Zählung).
 
 Was in dieser Filmliste steht, sieht also fast jedes Programm, das Mediatheken senderübergreifend durchsucht. 
