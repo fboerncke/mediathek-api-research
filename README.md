@@ -5,36 +5,60 @@
 ARD, ZDF und ARTE produzieren Sendungen mit Hörfassung, in Gebärdensprache, in Einfacher Sprache und mit Klarer Sprache. Eine Hörfassung (auch Audiodeskription oder Hörfilm genannt) ist eine zusätzliche Tonspur, die beschreibt, was im Bild passiert. Bezahlt werden all diese Fassungen aus dem Rundfunkbeitrag. Gemacht werden sie für Menschen, die sie brauchen: blinde und sehbehinderte Menschen, gehörlose und schwerhörige Menschen, Menschen, die auf vereinfachte Sprache angewiesen sind.
 
 Man sollte meinen, es genüge nachzusehen, ob „Hörfassung“ dabeisteht. Dieses Repository
-zeigt an echten Beispielen, warum das nicht reicht und nicht so einfach ist. Wir werden dabei auch
-sehen: **Es gibt keine offene, dokumentierte Schnittstelle, die senderübergreifend beantwortet, 
-welche barrierefreien Fassungen es von einer Sendung gibt.** Die Sender beschreiben diese Fassungen
-uneinheitlich. 
+zeigt an echten Beispielen, warum das nicht reicht. Die Probleme haben zwei Ursprünge,
+und man muss sie auseinanderhalten:
 
-Jedes Programm, das diese Mediatheken senderübergreifend durchsucht und Informationen zur Barrierefreiheit
-benötigt, ist gezwungen, auf seine Weise zu raten.
+**Erstens die Sender.** ARD, ZDF, ARTE, KiKA und PHOENIX beschreiben barrierefreie Fassungen
+jeder für sich: mit eigenen Wörtern, eigenen Datenfeldern, eigenen Auslieferungsformen.
+**Es gibt keine offene, dokumentierte Schnittstelle, die senderübergreifend beantwortet,
+welche barrierefreien Fassungen es von einer Sendung gibt.** Das ist die Wurzel. Die Sender
+haben einen gesetzlichen Auftrag zur Barrierefreiheit (dazu unten mehr), und eine gemeinsame
+Auskunft als API-Schnittstelle darüber, was es gibt, wäre der naheliegende Teil davon. So
+eine API gibt es aber in offizieller Form nicht.
 
-Die meisten dieser Programme fragen nicht selbst bei den Sendern nach. Sie lesen die
-**[MediathekView-Filmliste](https://mediathekview.de/)** (nachfolgend kurz „die Filmliste“) als Referenz. 
-Das ehrenamtliche Projekt MediathekView trägt darin seit gut 18 Jahren mehrmals täglich zusammen, 
-was etwa dreißig Mediatheken anbieten: knapp 594.000 Einträge, jeder mit Sender, Thema, Titel und 
-den Links zum Video und zur Sendungsseite. Rund 80 öffentliche Projekte bauen darauf auf.
+**Zweitens der Weg zu den Programmen.** Wer diese uneinheitlichen Daten an der Quellle 
+einsammelt und konsolidiert weitergibt, der muss sie in ein gemeinsames Format bringen,
+so gut es geht. Da Struktur der Daten an der Quelle aber nicht umfassend dokumentiert ist
+kann es passieren, dass Information verloren geht oder verdreht wird. 
+
+Mit dieser Situation kämpft heute vor allem in erster Reihe die **[MediathekView-Filmliste](https://mediathekview.de/)** 
+(nachfolgend kurz „die Filmliste“ genannt), die als de-facto Standard für viele Open Source 
+Projekte als einziges Angebot in dieser Qualität diese Arbeit überhaupt leistet und dabei 
+mit genau der Uneinheitlichkeit kämpfen muss, die die Sender hinterlassen. Jedes andere
+Projekt, das die Mediatheken senderübergreifend an der Quelle durchsuchbar machen will, 
+wäre damit genau so gezwungen, auf seine Weise zu raten und zu interpretieren. 
+
+Das ehrenamtliche Projekt MediathekView trägt in der Liste seit gut 18 Jahren mehrmals täglich 
+zusammen, was etwa dreißig Mediatheken anbieten: knapp 594.000 Einträge, jeder mit Sender, 
+Thema, Titel und den Links zum Video und zur Sendungsseite. Wenn undokumentierte Schnittstellen
+sich ändern, dann steuern die Maintainer aktiv nach und stellen den fortlaufenden Betrieb sicher.
+Damit leisten die Maintainer eine sehr wertvolle Grundarbeit.
+
+Wer ein Softwareprojekt mit Bezug zu Mediatheken baut, fragt deshalb in der Regeln nicht selbst
+bei den Sendern nach, sondern verwenden die Filmliste als Grundlage. Rund 80 öffentliche Projekte 
+bauen darauf auf (eigene Zählung).
 
 Was in dieser Filmliste steht, sieht also fast jedes Programm, das Mediatheken senderübergreifend durchsucht. 
-Umgekehrt gilt: Was dort fehlt, fehlt überall.
+**Umgekehrt gilt: Was dort fehlt, fehlt überall**.
 
+Schauen wir etwas genauer auf Merkmale zur Barrierefreiheit: Die Filmliste sieht hier keine eigenen 
+Spalten oder Datenfelder vor, die Merkmale werden (wenn überhaupt) als Freitext im Filmtitel erfasst.
 Bei der Hörfassung geht das meistens gut, weil auf dem Weg in die Filmliste zumindest ein entsprechendes 
-Wort in den Titel geschrieben wird (wenn auch kjein eindeutiges). Anderes kommt gar nicht an. Die ARD-Mediathek
-liefert Klare Sprache oft als zusätzliche Datei neben der normalen Fassung. In der Filmliste steht keine 
-einzige dieser Dateien. ARTE bietet Untertitel für Hörgeschädigte an. In der Filmliste steht keine einzige 
-Adresse dazu. Die Sender halten diese Angaben bereit, jeder in seinem eigenen Format und ohne offene 
-Dokumentation. Die Filmliste übernimmt sie nicht, und die Programme, die auf ihr aufbauen, bekommen sie 
-deshalb auch nicht.
+Wort in den Titel geschrieben wird (wenn auch kein eindeutiges). 
 
-Wer bemerkt den Fehler? Fast niemand. Wer gut sieht und hört, braucht diese Fassungen nicht und sucht nicht 
-nach ihnen. Wer sie braucht, bekommt von seinem Programm ein „gibt es nicht“ und kann nicht selbst 
-prüfen, ob das stimmt. Es gibt für dieses Szenario keine Fehlermeldung, und wer nicht weiß, dass etwas 
-fehlt, beschwert sich nicht. So bleibt ein bezahltes Angebot bei den Menschen unsichtbar, für die es 
-gemacht ist, und in keiner Statistik taucht das auf.
+Andere Merkmale kommen gar nicht an. Die ARD-Mediathek liefert Klare Sprache oft als zusätzliche Datei 
+neben der normalen Fassung. In der Filmliste steht keine einzige dieser Dateien. ARTE bietet Untertitel
+für Hörgeschädigte an. In der Filmliste steht keine einzige Adresse dazu. Die Sender halten diese 
+Angaben bereit, jeder in seinem eigenen Format und ohne offene Dokumentation und ohne Zusage, dass
+es morgen noch so ist. Wer das einsammelt, muss für jeden Sender eigens nachbauen, was
+dieser gerade tut. Was dabei nicht nachgebaut wird oder übersehen wird, das fehlt in der Filmliste und
+damit in allen Programmen, die auf ihr aufbauen.
+
+Wer bemerkt die Lücke, wenn eine Information auf diesem Weg verloren geht? Fast niemand. Wer gut sieht
+und hört, braucht diese Fassungen nicht und sucht nicht nach ihnen. Wer sie braucht, bekommt von seinem
+Programm ein „gibt es nicht“ und kann nicht selbst prüfen, ob das stimmt. Es gibt für dieses Szenario 
+keine Fehlermeldung, und wer nicht weiß, dass etwas fehlt, beschwert sich nicht. So bleibt ein bezahltes
+Angebot bei den Menschen unsichtbar, für die es gemacht ist, und in keiner Statistik taucht das auf.
 
 Alle nachfolgenden Beispiele sind verlinkt, damit sich jeder selbst ein Bild machen kann. Mediatheken nehmen
 Sendungen nach Ablauf der Rechte wieder heraus; ein Link kann deshalb irgendwann ins Leere
