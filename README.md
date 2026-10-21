@@ -83,7 +83,7 @@ alle sind verlinkt. „Sender“ meint in den Tabellen das Senderfeld der Filmli
 stehen die ARD und ihre Landesrundfunkanstalten wie der BR nebeneinander, obwohl alles
 aus der ARD-Mediathek kommt.
 
-### Ein Tatort, vier Einträge, drei Schreibweisen und ein falsches Versprechen
+### Ein Tatort, vier Einträge und ein falsches Versprechen
 
 „Die ewige Welle“ steht viermal in der Filmliste:
 
@@ -94,23 +94,24 @@ aus der ARD-Mediathek kommt.
 | BR | „[Tatort: Die ewige Welle](https://www.ardmediathek.de/video/Y3JpZDovL2JyLmRlL2Jyb2FkY2FzdC9GMjAxOVdPMDEwMDIyQTA)“ |
 | BR | „[Tatort: Die ewige Welle **(Hörfassung)**](https://www.ardmediathek.de/video/Y3JpZDovL2JyLmRlL2Jyb2FkY2FzdC9GMjAxOVdPMDEwMDIyQTAvc2VjdGlvbi84ZDE4YWE4Yi1hYjcyLTRhN2QtOWNkNi1hNDlkZTVhZmQxOWI)“ |
 
-Eine Hörfassung, zwei Schreibweisen für sie, einmal mit Bindestrich, einmal in Klammern. Und
-für den letzten Eintrag, der „(Hörfassung)“ im Titel trägt, meldet die ARD-Mediathek auf
-Nachfrage: **keine Audiodeskription.** Wer sich auf das Wort verlässt, startet den Film und
-hört keine Bildbeschreibung.
+Eine Hörfassung, zwei Schreibweisen für sie, einmal mit Bindestrich, einmal in Klammern.
+Das „(Hörfassung)“ im letzten Eintrag schreibt der Sender selbst, so heißt die Seite in der
+ARD-Mediathek. Und für genau diese Seite meldet dieselbe ARD-Mediathek im Datenfeld:
+**keine Audiodeskription.** Der Titel sagt ja, das Datenfeld sagt nein, beides aus einer
+Quelle. Wer sich auf das Wort verlässt, startet den Film und hört keine Bildbeschreibung.
 
 ### Drei Wörter für eine Sache in einem einzigen Eintrag
 
 Bei KiKA heißt eine Folge von „Addie und wie sie die Welt fühlt“
 „[5. Fatale Partys **(Hörfassung)**](https://www.kika.de/addie-und-wie-sie-die-welt-fuehlt/videos/audiodeskription/fatale-partys-als-hoerfilm-100)“.
-Ihre Adresse lautet `…/videos/`**`audiodeskription`**`/fatale-partys-als-`**`hoerfilm`**`-100`.
+Ihre Seitenadresse lautet `…/videos/`**`audiodeskription`**`/fatale-partys-als-`**`hoerfilm`**`-100`.
 Hörfassung, Audiodeskription, Hörfilm: dasselbe Merkmal, dreimal anders, in einem Eintrag.
 
 ### Die Hörfassung heißt „internationaler Ton“
 
 Beim Tatort „[Donuts](https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL3RhdG9ydC8yMDIzLTA0LTAyXzIwLTE1LU1FU1o)“
 liegen normale Fassung und Hörfassung als zwei Dateien auf derselben Seite. Sichtbar ist
-das nur in der Adresse der Videodatei: Die
+das nur im Dateinamen: Die
 [normale Fassung](https://ctv-videos.daserste.de/int/2023/03/22/f22a2099-ac0e-4718-9616-a3ee474cfe7f/JOB_568979__sendeton_1280x720-50p-3200kbit.mp4)
 heißt `…_sendeton_…`, die
 [Hörfassung](https://ctv-videos.daserste.de/int/2023/03/22/f22a2099-ac0e-4718-9616-a3ee474cfe7f/JOB_568980__internationalerton_1280x720-50p-3200kbit.mp4)
@@ -121,7 +122,7 @@ Beim Tatort „Haus der Toten – Tod am Rennsteig“ heißt die Datei mit der H
 die normale Fassung, die Hörfassung und die Fassung mit Gebärdensprache. Dieselbe Sache,
 drei Namen.
 
-Manche Häuser legen außerdem eine zweite Seite an, deren Adresse auf „/audiodeskription“
+Manche Häuser legen außerdem eine zweite Seite an, deren Seitendresse auf „/audiodeskription“
 endet (Tatort „Licht“, HR:
 [normal](https://www.ardmediathek.de/video/MzlkYWUyNGQtYTliMi00ZTVkLTg5MzMtMWU3NTk4ZDJlYzYz),
 [„/audiodeskription“](https://www.ardmediathek.de/video/MzlkYWUyNGQtYTliMi00ZTVkLTg5MzMtMWU3NTk4ZDJlYzYzL2F1ZGlvZGVza3JpcHRpb24);
@@ -178,8 +179,8 @@ anders, und keiner über eine offene, dokumentierte Schnittstelle:
 | KiKA | `hasAdVideo: true` | `endDate` |
 | PHOENIX | ein Kürzel am Sendetermin (`ut`, `gs`, `zk`) | `visibleTo` |
 
-Die Sprache schreibt die ARD mit drei Buchstaben (`deu`), ARTE mit zwei (`de`). An 16 Adressen
-meldet die ARD-Mediathek statt einer Sprache nur „ov“ ("Originalversion"), welche auch immer, etwa
+Die Sprache schreibt die ARD mit drei Buchstaben (`deu`), ARTE mit zwei (`de`). Bei 16 Sendungen
+meldet die ARD-Mediathek im Datenfeld statt einer Sprache nur „ov“ ("Originalversion"), welche auch immer, etwa
 bei der Serie „[Soul Shift](https://www.ardmediathek.de/video/MDU1NjQyNGEtNGU4ZS00MTg4LTllNWMtNzFiZWE0NjNlNTgy)“.
 Und ARTE benennt dieselbe Fassung je nach Sprache der Anfrage anders: „OmU-POL“ auf Deutsch,
 „POL“ auf Polnisch.
@@ -203,9 +204,11 @@ Oft nicht der Sender. In der ARD-Mediathek heißt die Folge schlicht „Donuts�
 Weg in die Filmliste wird daraus „Donuts (Audiodeskription)“. Bei funk schreibt der
 Sender „… | Hörfassung | 100percentme“, in der Filmliste steht daraus
 „[… | Audiodeskription | 100percentme](https://www.ardmediathek.de/video/Y3JpZDovL2Z1bmsubmV0LzEyMDA0L3ZpZGVvLzE2NTA2NTM)“
-– das Wort wird mitten im Titel ausgetauscht. Und im spanischen ARTE-Kanal heißt die Serie
-„[Camaradas (2/8) **(Originalversion mit Untertitel)**](https://www.arte.tv/es/videos/123309-002-A/camaradas-2-8/)“:
-ein deutscher Zusatz an einem spanischen Titel.
+– das Wort wird mitten im Titel ausgetauscht. 
+
+Und im spanischen ARTE-Kanal heißt die Folge bei ARTE schlicht „Camaradas (2/8)“. In der
+Filmliste steht „[Camaradas (2/8) **(Originalversion mit Untertitel)**](https://www.arte.tv/es/videos/123309-002-A/camaradas-2-8/)“:
+ein deutscher Zusatz, den die Filmliste an einen spanischen Titel hängt.
 
 Manchmal bleibt von einer solchen Ersetzung nur eine Hülle. In der Filmliste
 stehen Titel wie
@@ -225,14 +228,14 @@ finden will, muss fünf Schreibweisen kennen und weiß trotzdem nicht, ob er all
 
 ### Vertauscht
 
-Vom Tatort „Siebte Etage (2024)“ gibt es in der ARD-Mediathek eine Seite, deren Adresse auf
+Vom Tatort „Siebte Etage (2024)“ gibt es in der ARD-Mediathek eine Seite, deren Seitenadresse auf
 „/audiodeskription“ endet, und eine, die auf „/gebaerdensprache“ endet. Beim Sender stimmt
 alles: Die erste heißt „Siebte Etage (2024) (Audiodeskription)“, die zweite
 „Siebte Etage (2024) (mit Gebärdensprache)“.
 
 In der Filmliste steht es umgekehrt:
 
-| Adresse endet auf | Titel in der Filmliste |
+| Seitenadresse endet auf | Titel in der Filmliste |
 |---|---|
 | [/audiodeskription](https://www.ardmediathek.de/video/Y3JpZDovL3dkci5kZS9CZWl0cmFnLXNvcGhvcmEtZGRiYzBlYWQtNjNhMi00MTY4LThlZWYtZmE5NGUxNzM0NmY5L2F1ZGlvZGVza3JpcHRpb24) | „Siebte Etage (2024) **(Gebärdensprache)**“ |
 | [/gebaerdensprache](https://www.ardmediathek.de/video/Y3JpZDovL3dkci5kZS9CZWl0cmFnLXNvcGhvcmEtZGRiYzBlYWQtNjNhMi00MTY4LThlZWYtZmE5NGUxNzM0NmY5L2dlYmFlcmRlbnNwcmFjaGU) | „Siebte Etage (2024) **(Audiodeskription)**“ |
@@ -244,8 +247,15 @@ hundertmal in der Filmliste (109 am 30.09.2026).
 ### Untertitel, die es gibt und die nirgends ankommen
 
 ARTE führt Untertitel ausdrücklich „für Hörgeschädigte“, etwa „Deutsch (Hörgeschädigte)“ beim
-U-Boot. In der Filmliste steht für ARTE **keine einzige** Untertitel-Adresse. Genauso geht
-es den Klare-Sprache-Dateien der ARD-Mediathek: Sie liegen als zweite Videodatei neben der
+U-Boot. In der Filmliste steht für ARTE **kein einziger** Link zu einer Untertiteldatei. Der Grund ist
+dokumentiert und technisch: ARTE liefert die Untertitel samt Kennzeichnung „für
+Hörgeschädigte“ über seine Schnittstelle, der Crawler von MediathekView liest diese Angaben
+auch ein, verwirft sie aber. Der Einbau würde einen zweiten Abruf je Sendung erfordern, und
+das verträgt sich nicht mit dem Anfragelimit von ARTE und der Laufzeit des Crawlers
+([Issue #791](https://github.com/mediathekview/MServer/issues/791), offen seit Januar 2022).
+Die Untertitel gibt es, sie sind markiert, und sie kommen trotzdem nicht an.
+
+Genauso geht es den Klare-Sprache-Dateien der ARD-Mediathek: Sie liegen als zweite Videodatei neben der
 normalen Fassung, und kein einziger Eintrag der Filmliste verweist auf eine davon. Was der
 Sender nur im Dateinamen oder im Datenfeld hinterlegt, erreicht die Filmliste nicht.
 
@@ -255,7 +265,7 @@ das „Nein“ dort durchgehend korrekt, weil es gar nichts zu verlieren gab.
 
 ### Dieselbe Folge, zwei Nummern
 
-Die „Rentnercops“ stehen unter derselben Adresse einmal als
+Die „Rentnercops“ stehen unter derselben Seitenadresse einmal als
 „[Folge 3: Altes Eisen](https://www.ardmediathek.de/video/Y3JpZDovL3dkci5kZS9CZWl0cmFnLTNlZjMwNjE2LTI0MDQtNGU1NS05NWZlLTZlMjZhYzJjODM5Ng)“
 (Sender ARD) und einmal als „Folge 43: Altes Eisen“ (Sender WDR). Die Hörfassung hängt nur am
 zweiten Eintrag. Wer nach Folge 3 sucht, findet sie nicht.
@@ -273,9 +283,6 @@ ist ein Beitrag *über* Leichte Sprache, nicht *in* ihr. Ein verbreitetes Progra
 „[Das Ende von THE WALKING DE**AD |** TOP 5](https://www.ardmediathek.de/video/Y3JpZDovL2Z1bmsubmV0LzExNjY0L3ZpZGVvLzE3NTg4MDk)“
 oder „[Die Pfefferkörner gibt's auch als **Hörspiel**!](https://www.ardmediathek.de/video/Y3JpZDovL25kci5kZS80NzFhMzkyNy0zZTZmLTRhNGYtYTU5Ny02OGI2NGE3ZDU1Yjg)“
 als Hörfassung an.
-
-Eine Suche, die beide Begriffe zusammenwirft, schickt einen schwerhörigen Menschen zu
-Nachrichten in vereinfachter Sprache.
 
 ---
 
@@ -338,19 +345,70 @@ Diese Analyse will die Filmliste nicht ersetzen, sondern sucht nach Wegen zur Er
 
 ## Warum macht MediathekView das nicht selbst?
 
-Naheliegend wäre, dass MediathekView die fehlenden Angaben einfach ergänzt. Weitere Spalten im Tabellenformat müssten sich doch einfach ergänzen lassen? Dagegen spricht nicht der Wille, sondern die Bauart:
+Naheliegend wäre, dass MediathekView die fehlenden Angaben einfach ergänzt. Ein paar Felder
+mehr, und die Hörfassung hätte ihr eigenes? Warum das bisher nicht geschehen ist, können
+nur die Maintainer sagen. Von außen sichtbar sind vier Grenzen, an denen jede Erweiterung
+vorbeimuss, und keine davon hat das Projekt selbst gesetzt.
 
-Die Filmliste ist ein Transportformat. Sie sagt Programmen, welche Sendungen es gibt und wo das Video liegt. Dafür ist sie gebaut, und das kann sie gut. Ein Katalog mit geprüften Eigenschaften zu jeder Sendung ist sie nicht. Barrierefreiheit kommt darin nur als Wort im Titel vor.
+**Die Quellen.** Die Filmliste kann nur weitergeben, was die Sender hergeben, und die geben
+es jeder anders her: als Wort im Titel, als Teil der Seitenadresse, als Dateiname, als
+Datenfeld. Keine dieser Schnittstellen ist offen dokumentiert, und sie ändern sich ohne
+Ankündigung. Die Commit-Geschichte des Crawlers zeigt das: zwischen 35 und 90 Änderungen am
+Senderteil pro Jahr, meist um die 50, und in acht der neun Jahre seit 2018 musste
+mindestens ein Sender komplett neu angebunden werden, zuletzt das ZDF 2025 mit seiner
+neuen Mediathek (Stand Oktober 2026). Das ist keine Weiterentwicklung, das ist Nachsteuern.
+Jedes neue Feld wäre eine weitere Stelle, die bei jeder Senderänderung mitbricht.
 
-Das Format ist rund fünfzehn Jahre alt, und viele Werkzeuge Dritter lesen es Feld für Feld an fester Stelle. Deshalb wird es bewusst stabil gehalten. Neue Felder lassen sich hinten anhängen, alte lassen sich nicht umbauen. Ein Bruch träfe Menschen, die nichts falsch gemacht haben.
+**Der Betrieb.** Der Crawler fragt mehrmals täglich rund dreißig Mediatheken ab, und die
+Sender begrenzen, wie oft er das darf. Die ARTE-Untertitel zeigen, was das heißt: Der
+Crawler liest sie samt Kennzeichnung „für Hörgeschädigte“ bereits ein. Sie in die Filmliste
+zu bringen, bräuchte einen zweiten Abruf je Sendung, und der passt nicht in das Anfragelimit
+von ARTE und die Laufzeit des Crawlers
+([Issue #791](https://github.com/mediathekview/MServer/issues/791), offen seit 2022).
+Ein geprüftes Nein wäre noch teurer: Wer „nein“ sagen will, muss bei jeder Sendung
+nachfragen und die Antwort festhalten. Wer „bis wann“ sagen will, muss das Ablaufdatum
+mitführen und aktuell halten. Das ist eine andere Aufgabe als das Sammeln.
 
-Dazu kommt die Größe. Unkomprimiert ist die Liste etwa ein Gigabyte groß, und viele Installationen laden sie täglich. Jedes zusätzliche Feld kostet Datenverkehr, den jemand bezahlt.
+**Die Verträglichkeit.** Die Filmliste ist rund fünfzehn Jahre alt. Jeder Eintrag ist eine
+Reihe von zwanzig Werten in fester Reihenfolge, ohne Feldnamen. Viele Werkzeuge Dritter
+lesen sie genau so: Position für Position. Deshalb wird das Format bewusst stabil gehalten.
+Neue Felder lassen sich hinten anhängen, alte lassen sich nicht umbauen. Ein Bruch träfe
+Menschen, die nichts falsch gemacht haben. Dazu kommt die Größe: Unkomprimiert ist die
+Liste etwa ein Gigabyte groß, und viele Installationen laden sie täglich. Jedes zusätzliche
+Feld kostet Datenverkehr, den jemand bezahlt.
 
-Vor allem ist ein geprüftes Nein eine andere Aufgabe als das Sammeln. Wer „nein“ sagen will, muss bei jeder Sendung nachfragen und die Antwort festhalten. Wer „bis wann“ sagen will, muss das Ablaufdatum mitführen und aktuell halten. Mit dem Nachsteuern ist das Team ohnehin gut beschäftigt: 45 bis 70 Änderungen am Senderteil pro Jahr, seit 2018 mindestens ein kompletter Neubau für einen Sender jährlich.
+**Das Risiko.** 2020 wurde MediathekView wegen eines einzelnen Films abgemahnt, obwohl die
+Filmliste nur Links enthält und nie eine Videodatei. Die Anwaltskosten trug das Projekt aus
+Spenden. Wer ehrenamtlich Daten der Sender weitergibt, trägt dieses Risiko allein. Auch das
+spricht nicht dafür, immer mehr Angaben einzusammeln, für die sich kein Sender zuständig
+fühlt.
 
-Die Erweiterungen werden aktiv diskutiert. Dabei geht es nicht nur um die Hörfassung: Auch Gebärdensprache, Klare Sprache, die Sprache einer Tonspur und das Ablaufdatum bräuchten jeweils eine eigene Spalte. Im Entwicklungszweig führt das Datenmodell Hörfassung und Gebärdensprache schon als eigene Felder. Und es liegen fertige, unentgeltliche Umsetzungen vor: Für die Sprache der Tonspur stehen zwei Änderungsvorschläge bereit, für die [ARD](https://github.com/mediathekview/MServer/pull/1174) und das [ZDF](https://github.com/mediathekview/MServer/pull/1175), mit Tests und dem Nachweis, dass bestehende Programme die neue Spalte schadlos überspringen. Übernommen sind sie bis heute nicht (Stand 20.10.2026).
+Die Erweiterungen werden trotzdem aktiv diskutiert. Im Entwicklungszweig führt das
+Datenmodell Hörfassung und Gebärdensprache schon als eigene Felder. Für die Sprache der
+Tonspur liegen zwei fertige Änderungsvorschläge vor, für die
+[ARD](https://github.com/mediathekview/MServer/pull/1174) und das
+[ZDF](https://github.com/mediathekview/MServer/pull/1175), mit Tests und dem Nachweis, dass
+bestehende Programme das neue Feld schadlos überspringen. Übernommen sind sie bisher nicht
+(Stand 20.10.2026). Das ist eine konservative Entscheidung der Maintainer, und sie ist zu
+respektieren: 
 
-Gute Ideen schaffen es also bislang nicht in den Hauptzweig und in den Betrieb. Die Verträglichkeit mit den bestehenden Programmen wird erkennbar höher gewichtet als neue Merkmale. Aus Sicht des Projekts ist das nachvollziehbar. Für Menschen, die eine Hörfassung suchen, heißt es: Die Auskunft bleibt ein Wort im Titel.
+Ob und wann sie übernommen werden, entscheiden die Maintainer, und das ist zu respektieren:
+Wer ein Format verantwortet, von dem rund achtzig Projekte abhängen, hat gute Gründe, mit
+jeder Änderung vorsichtig zu sein.
+
+Entscheidend ist aber etwas anderes: Selbst wenn alle diese Felder morgen in der Filmliste
+stünden, wären sie Rekonstruktionen aus fünf undokumentierten Quellen. Ein Feld kann nicht
+besser sein als das, was die Sender liefern. Solange jeder Sender anders antwortet, bleibt
+auch die beste Filmliste Nacharbeit an Einzelfällen, geleistet von Ehrenamtlichen, die dafür
+weder Auftrag noch Zusage der Sender haben. Für Menschen, die eine Hörfassung suchen, heißt
+das heute: Die Auskunft bleibt ein Wort im Titel. Die Ursache dafür liegt nicht bei denen,
+die das Wort hineinschreiben.
+
+Was auch für sich spricht: Ein Fork des Crawlers ist technisch einfach, MServer ist frei. 
+Tatsächlich zeigt GitHub 21 Forks. Aber keiner davon schafft es in den Regelbetrieb und 
+erzeugt eine eigene Filmliste. Dass es in zehn Jahren niemand getan hat, zeigt, dass die
+Hürde nicht der Code ist, sondern der Betrieb: eigene Server, die Anfragelimits der Sender,
+das Nachsteuern bei jeder Senderänderung und das Abmahnrisiko.
 
 ---
 
@@ -375,45 +433,63 @@ Zusammen ergibt das eine Lücke, für die sich niemand zuständig fühlt.
 
 ## Was es bräuchte
 
-Keine neue Mediathek und keine neue App, sondern eine **offene Datengrundlage**, die jedes
-bestehende Programm nutzen kann:
+Dass die Sender ihrer Aufgabe nachkommen. Sie produzieren die barrierefreien Fassungen,
+sie wissen, was sie haben, und sie sind gesetzlich verpflichtet, barrierefreie Angebote
+zugänglich zu machen. Der fehlende Schritt ist eine **gemeinsame, offene Schnittstelle**,
+die für jede Sendung sagt, welche Fassungen es gibt, in welcher Sprache, wie ausgeliefert
+und bis wann. Ein Vokabular, fünf Sender, eine Antwort. Die Standards dafür gibt es.
 
-- für jede Sendung: welche barrierefreien Fassungen es gibt, in welcher Sprache, wie
-  ausgeliefert (eigene Datei oder Tonspur) und bis wann verfügbar
-- mit **ja, nein und ungeprüft**, und mit der ehrlichen Angabe, wie vollständig eine
-  Antwort ist
-- ausgegeben in den anerkannten Standards, statt ein eigenes Format zu erfinden
-- aus öffentlich erreichbaren Daten, **schonend** erhoben: Nachfragen beim Sender nur
-  für Neues, begrenzt viele Serveranfragen pro Zeit, nie parallel
-- ohne eigenen Bestand an Inhalten: keine Videos, keine Untertitel, nur Aussagen über
-  Sendungen
-- als freie Software zum **Selbstbetreiben**, bis hinunter auf einen Raspberry Pi
+Solange es das nicht gibt, braucht es eine Überbrückung: ein **offenes Werkzeug**, mit dem
+sich jeder diese Auskunft selbst erzeugen kann, als Ergänzung neben der Filmliste, mit
+drei Antworten statt zwei: **ja, nein und ungeprüft.** Keine neue Mediathek, keine neue
+App, kein zweiter Crawler, und kein neuer Dienst, der einen Betreiber braucht. Wer das
+Werkzeug laufen lässt, hat die Datei. Wer sie veröffentlicht, erspart anderen das
+Nachfragen beim Sender. Betreiber kann jeder werden, auch die Sender selbst.
 
-Ein großer Teil der Arbeit ist dabei keine Programmierung. Er besteht darin, möglichst jeden 
-der oben gezeigten Fälle beim Sender und in der Filmliste zu finden, zu prüfen und sauber 
-einzuordnen. Das Ziel: eine einheitliche Darstellung als API, auf die sich andere Projekte 
-verlassen können.
+Darum müsste sich jemand kümmern. Und zwar um drei Dinge:
 
-Diese Lücke schließt sich nicht von selbst. Die Standards gibt es, die Angaben bei den 
-Sendern auch. Es fehlt jemand, der beides zusammenführt und dafür geradesteht, dass die 
-Auskunft stimmt, auch wenn sie „nein“ lautet.
+- **Um ein gemeinsames Vokabular.** Fünf Sender sagen auf fünf Arten „ja“. Jemand muss
+  diese fünf Arten auf einen Wert abbilden, dokumentiert und nachprüfbar, in den Standards,
+  die es schon gibt. Diese Abbildung ist zugleich der Vorschlag an die Sender, wie ihre
+  gemeinsame Schnittstelle aussehen könnte: Das Format, das das Werkzeug ausgibt, ist das
+  Format, das die Sender liefern müssten. Nicht als neuer Standard, sondern als
+  Diskussionsbeitrag auf Grundlage der bestehenden, geprüft an echten Daten und an jedem
+  Fall in diesem Dokument.
+- **Um geprüfte Aussagen statt Wörter im Titel.** Jemand muss bei den Sendern nachfragen,
+  die Antworten festhalten, auch ein Nein, und dazusagen, wie vollständig die Auskunft ist.
+  Schonend erhoben: nur gezielt, nur für Neues, und fremde Ergebnisse werden eingelesen
+  statt erneut erfragt. Ohne eigenen Bestand an Inhalten. Als freie Software, die auf
+  einem Raspberry Pi läuft.
+- **Um Zahlen.** Niemand weiß heute öffentlich, wie viele barrierefreie Fassungen produziert werden
+  und wie viele davon auffindbar sind. Die Messung oben ist ein erster Lauf. Jeder Lauf des
+  Werkzeugs liefert sie neu, je Sender, mit Datum. Wer sie veröffentlicht, macht sichtbar,
+  was fehlt, auch für die Sender.
+
+Ein großer Teil dieser Arbeit ist keine Programmierung. Sie besteht darin, jeden der oben
+gezeigten Fälle zu finden, zu prüfen und sauber einzuordnen, und jeden neuen Fall, den
+Betroffene melden, dazu. Aus einer Sammlung von Ärgernissen wird so ein Prüfstand.
+
+Diese Lücke schließt sich nicht von selbst. Es fehlt jemand, der die Angaben der Sender
+zusammenführt und dafür geradesteht, dass die Methode stimmt: dass jeder bekannte Fall
+richtig eingeordnet wird, auch wenn die Antwort „nein“ lautet. Bis die Sender es selbst
+tun. Das Ziel der Überbrückung ist, überflüssig zu werden.
 
 ---
 
 ## Wer dahintersteht
 
 Ich bin Frank Börncke, freiberuflicher Softwareentwickler. Seit 2020 betreibe ich kostenlos
-„[Meine Mediathek](https://www.meinemediathek.de)“, eine Alexa-Sprachanwendung, mit der man die 
-Mediatheken von ARD, ZDF und ARTE
-per Sprache durchsuchen und abspielen kann, auch ohne Bildschirm. In dem mehrjährigen Betrieb
-habe ich gelernt, wo die Grenzen der heutigen Datenlage liegen, gerade beim barrierefreien
-Zugang. 
+„[Meine Mediathek](https://www.meinemediathek.de)“, eine Alexa-Sprachanwendung, mit der man
+die Mediatheken von ARD, ZDF und ARTE per Sprache durchsuchen und abspielen kann, auch ohne
+Bildschirm. In dem mehrjährigen Betrieb habe ich gelernt, wo die Grenzen der heutigen
+Datenlage liegen, gerade beim barrierefreien Zugang. Die Messung in diesem Dokument, die
+Nachfragen bei den Sendern und die Änderungsvorschläge an MediathekView sind daraus
+entstanden. Wie ich die drei Punkte oben angehen will, beschreibe ich im Antrag.
 
-Dieses Vorhaben hat keine Gewinnabsicht. Es versteht sich als **Diskussionsbeitrag**: Es 
-soll zeigen, dass Auffindbarkeit technisch möglich ist, und es liefert Zahlen, wo bisher 
-niemand welche hatte. Die Standards gibt es, die Angaben bei den Sendern auch. Was fehlt, 
-ist die Schicht dazwischen: geprüfte Auskünfte, auch ein Nein, gezählt nach Sendungen 
-und mit der Angabe, wie vollständig sie sind.
+Dieses Vorhaben hat keine Gewinnabsicht. Es versteht sich als **Diskussionsbeitrag** in
+zwei Richtungen: Es zeigt, dass Auffindbarkeit technisch möglich ist, und es liefert Zahlen,
+wo bisher niemand welche hatte. Und es legt ein Format vor, an dem sich diskutieren lässt,
+wie eine gemeinsame Auskunft der Sender aussehen könnte.
 
 **Kontakt und Hinweise** sind willkommen, besonders von Menschen, die Hörfassungen,
 Gebärdensprache oder Klare Sprache selbst nutzen, und von Projekten, die Mediathekdaten
