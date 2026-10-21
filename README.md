@@ -65,15 +65,23 @@ führen. Zum Zeitpunkt der Erstellung dieses Textes haben die Links funktioniert
 
 ---
 
-## Was man findet, wenn man hinsieht
+## Datenqualität an der Quelle: beim Sender
 
 Für sich genommen schreibt jeder Sender meist einheitlich. Das Durcheinander entsteht
-zwischen den Sendern und später dann auch auf dem Weg in die Filmliste. Jedes der folgenden
-Beispiele ist echt.
+zwischen den Sendern. Ein Merkmal wie „Hörfassung“ kann an vier Orten stehen, und jeder
+Sender benutzt andere:
 
-Ein Hinweis vorab: „Sender“ meint in den Tabellen das Senderfeld der Filmliste. Dort 
-stehen die ARD und ihre Landesrundfunkanstalten wie der BR nebeneinander, obwohl 
-alles aus der ARD-Mediathek kommt.
+| Ort | Beispiel | Kommt in der Filmliste an? |
+|---|---|---|
+| **Titel** der Sendung | „(klare Sprache)“ beim WDR | ja, als Freitext |
+| **Seitenadresse** | `…/videos/audiodeskription/…` bei KiKA | ja, aber nur als Link |
+| **Dateiname** des Videos | `_internationalerton_` bei „Donuts“ | ja, aber nur als Link |
+| **Datenfeld** der Schnittstelle | `["UT","AD","DGS"]` bei der ARD | nein |
+
+Die folgenden Beispiele zeigen, was die Sender an diesen vier Orten tun. Jedes ist echt,
+alle sind verlinkt. „Sender“ meint in den Tabellen das Senderfeld der Filmliste. Dort
+stehen die ARD und ihre Landesrundfunkanstalten wie der BR nebeneinander, obwohl alles
+aus der ARD-Mediathek kommt.
 
 ### Ein Tatort, vier Einträge, drei Schreibweisen und ein falsches Versprechen
 
@@ -90,24 +98,6 @@ Eine Hörfassung, zwei Schreibweisen für sie, einmal mit Bindestrich, einmal in
 für den letzten Eintrag, der „(Hörfassung)“ im Titel trägt, meldet die ARD-Mediathek auf
 Nachfrage: **keine Audiodeskription.** Wer sich auf das Wort verlässt, startet den Film und
 hört keine Bildbeschreibung.
-
-### Vertauscht
-
-Vom Tatort „Siebte Etage (2024)“ gibt es in der ARD-Mediathek eine Seite, deren Adresse auf
-„/audiodeskription“ endet, und eine, die auf „/gebaerdensprache“ endet. Beim Sender stimmt
-alles: Die erste heißt „Siebte Etage (2024) (Audiodeskription)“, die zweite
-„Siebte Etage (2024) (mit Gebärdensprache)“.
-
-In der Filmliste steht es umgekehrt:
-
-| Adresse endet auf | Titel in der Filmliste |
-|---|---|
-| [/audiodeskription](https://www.ardmediathek.de/video/Y3JpZDovL3dkci5kZS9CZWl0cmFnLXNvcGhvcmEtZGRiYzBlYWQtNjNhMi00MTY4LThlZWYtZmE5NGUxNzM0NmY5L2F1ZGlvZGVza3JpcHRpb24) | „Siebte Etage (2024) **(Gebärdensprache)**“ |
-| [/gebaerdensprache](https://www.ardmediathek.de/video/Y3JpZDovL3dkci5kZS9CZWl0cmFnLXNvcGhvcmEtZGRiYzBlYWQtNjNhMi00MTY4LThlZWYtZmE5NGUxNzM0NmY5L2dlYmFlcmRlbnNwcmFjaGU) | „Siebte Etage (2024) **(Audiodeskription)**“ |
-
-Diesmal geht es gut aus, weil beide Seiten ohnehin alle drei Fassungen liefern. 
-Verlassen kann sich darauf niemand: Solche vertauschten Einträge stehen über 
-hundertmal in der Filmliste (109 am 30.09.2026).
 
 ### Drei Wörter für eine Sache in einem einzigen Eintrag
 
@@ -140,27 +130,6 @@ Tatort „Unter Feuer“, MDR:
 [„/audiodeskription“](https://www.ardmediathek.de/video/Y3JpZDovL21kci5kZS9zZW5kdW5nLzI4MjA0MC81MTQ0NzgtNDk0NDk5L2F1ZGlvZGVza3JpcHRpb24)).
 Beide Seiten liefern dieselben Dateien. Wer Seiten zählt, sieht zwei Sendungen, wo eine ist.
 
-### Wer schreibt das Wort in den Titel?
-
-Oft nicht der Sender. In der ARD-Mediathek heißt die Folge schlicht „Donuts“; erst auf dem
-Weg in die Filmliste wird daraus „Donuts (Audiodeskription)“. Bei funk schreibt der
-Sender „… | Hörfassung | 100percentme“, in der Filmliste steht daraus
-„[… | Audiodeskription | 100percentme](https://www.ardmediathek.de/video/Y3JpZDovL2Z1bmsubmV0LzEyMDA0L3ZpZGVvLzE2NTA2NTM)“
-– das Wort wird mitten im Titel ausgetauscht. Und im spanischen ARTE-Kanal heißt die Serie
-„[Camaradas (2/8) **(Originalversion mit Untertitel)**](https://www.arte.tv/es/videos/123309-002-A/camaradas-2-8/)“:
-ein deutscher Zusatz an einem spanischen Titel.
-
-Manchmal bleibt von einer solchen Ersetzung nur eine Hülle. In der Filmliste
-stehen Titel wie
-„Eisige Schatten – Folge 3 (S01/E03) **()** (Audiodeskription)“: leere Klammern, der Rest
-einer automatischen Umbenennung.
-
-### Gebärdensprache in fünf Schreibweisen
-
-„(Gebärdensprache)“, „(mit Gebärdensprache)“, „(Mit Gebärdensprache)“, „(DGS)“ und
-„[Die Sendung vom 23.09.2022 **mit Deutscher Gebärdensprache (DGS)**](https://www.ardmediathek.de/video/Y3JpZDovL3N3ci5kZS9hZXgvbzE3MzA3MjQ)“.
-Im Datenfeld der ARD-Mediathek heißt sie schlicht `DGS`.
-
 ### Klar ist nicht einfach
 
 „Klare Sprache“ und „Einfache Sprache“ klingen fast gleich und haben nichts miteinander zu tun:
@@ -174,8 +143,8 @@ Beim WDR steht Klare Sprache als eigene Datei mit „(klare Sprache)“ im Titel
 „[Die letzten Menschen von Köln](https://www.ardmediathek.de/video/Y3JpZDovL3dkci5kZS9CZWl0cmFnLXNvcGhvcmEtYjM2NzBlNDMtOTBmMC00YTQxLWE5M2QtNTlhYWU3NGI0N2Ew)“.
 In der ARD-Mediathek liegt sie außerdem als eigene Datei neben der normalen Fassung, etwa bei
 „[Haus der Toten – Tod am Rennsteig](https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEX2E2MjNhM2FmLTA2MTctNDA3Mi1hODFiLWZiZjVhMjE5NGVlM19nYW56ZVNlbmR1bmc)“
-(`…_klaresprache_…`). In der Filmliste kommt diese Datei **nicht vor** –
-kein einziger Eintrag verweist auf eine solche Datei. Eine Datei kann auch beides zugleich sein:
+(`…_klaresprache_…`), ohne eigenen Titel und ohne eigene Seite. Dasselbe Merkmal also
+einmal im Titel, einmal nur im Dateinamen. Eine Datei kann auch beides zugleich sein:
 „[Tatort: Diesmal ist es anders **(klare Sprache) (Audiodeskription)**](https://www.ardmediathek.de/video/Y3JpZDovL3dkci5kZS9CZWl0cmFnLXNvcGhvcmEtNWQ1ZWYzYWMtYjFiZS00ODU5LThhMDAtYjk3ZGMzZmFmYzFm)“.
 
 Eine Suche, die beide Begriffe zusammenwirft, schickt einen schwerhörigen Menschen zu
@@ -195,32 +164,6 @@ heißt die deutsche „Deutsch (Hörfilm)“. Ihre Kurzbezeichnung lautet aber *
 genau wie die der französischen. Auf der
 [französischen Seite](https://www.arte.tv/fr/videos/025621-000-A/la-princesse-de-cleves/)
 heißt dieselbe deutsche Hörfassung „Allemand (audiodescription)“, kurz „AD DE“.
-
-### Untertitel, die es gibt und die nirgends ankommen
-
-ARTE führt Untertitel ausdrücklich „für Hörgeschädigte“, etwa „Deutsch (Hörgeschädigte)“ beim
-U-Boot. In der Filmliste steht für ARTE **keine einzige** Untertitel-Adresse. Bei
-PHOENIX ist es anders herum: Dort fehlen die Untertitel schon beim Sender: in rund 8.000
-Antworten der ARD-Mediathek zu PHOENIX-Sendungen keine einzige. Immerhin ist da das "Nein" 
-durchgehend korrekt.
-
-### Wörter, die täuschen
-
-„[In der Tonkabine: So entstehen Hörfilme](https://www.ardmediathek.de/video/Y3JpZDovL21kci5kZS9iZWl0cmFnL2Ntcy9lNTcwOTAzMS00MWI1LTQ4OGEtYmFjYy04ZWM4NzEyMjhhMzI)“
-ist ein Beitrag über Hörfilme, aber selbst keiner.
-„[Leichte Sprache braucht fast jeder zehnte Mensch](https://www.ardmediathek.de/video/Y3JpZDovL3N3ci5kZS9hZXgvbzIwNzc3MjE)“
-ist ein Beitrag *über* Leichte Sprache, nicht *in* ihr. Ein verbreitetes Programm wertet schon
-„AD |“ oder „Hörspiel“ im Titel als Hinweis auf eine Hörfassung und kündigt so
-„[Das Ende von THE WALKING DE**AD |** TOP 5](https://www.ardmediathek.de/video/Y3JpZDovL2Z1bmsubmV0LzExNjY0L3ZpZGVvLzE3NTg4MDk)“
-oder „[Die Pfefferkörner gibt's auch als **Hörspiel**!](https://www.ardmediathek.de/video/Y3JpZDovL25kci5kZS80NzFhMzkyNy0zZTZmLTRhNGYtYTU5Ny02OGI2NGE3ZDU1Yjg)“
-als Hörfassung an.
-
-### Dieselbe Folge, zwei Nummern
-
-Die „Rentnercops“ stehen unter derselben Adresse einmal als
-„[Folge 3: Altes Eisen](https://www.ardmediathek.de/video/Y3JpZDovL3dkci5kZS9CZWl0cmFnLTNlZjMwNjE2LTI0MDQtNGU1NS05NWZlLTZlMjZhYzJjODM5Ng)“
-(Sender ARD) und einmal als „Folge 43: Altes Eisen“ (Sender WDR). Die Hörfassung hängt nur am
-zweiten Eintrag. Wer nach Folge 3 sucht, findet sie nicht.
 
 ### Fünf Sender, fünf Arten, „ja“ zu sagen
 
@@ -243,6 +186,96 @@ Und ARTE benennt dieselbe Fassung je nach Sprache der Anfrage anders: „OmU-POL
 
 Vollständig ist diese Aufstellung sicher nicht. Sie beruht auf eigener Untersuchung und auf Stichproben. Eine 
 öffentliche Dokumentation, auf die ich mich stützen könnte, gibt es nicht.
+
+---
+
+## Datenqualität in der Filmliste
+
+Die Filmliste kennt für jede Sendung Sender, Thema, Titel und die Links zu Seite und
+Videodatei. Ein eigenes Feld für Barrierefreiheit gibt es nicht. Alles, was die Sender an
+den vier Orten oben hinterlegen, muss deshalb beim Sammeln zu einem Wort im Titel werden,
+oder es geht verloren. Dabei passieren drei Dinge: Wörter werden hinzugefügt, Wörter werden
+ersetzt, und Merkmale bleiben manchmal auch auf der Strecke.
+
+### Wer schreibt das Wort in den Titel?
+
+Oft nicht der Sender. In der ARD-Mediathek heißt die Folge schlicht „Donuts“; erst auf dem
+Weg in die Filmliste wird daraus „Donuts (Audiodeskription)“. Bei funk schreibt der
+Sender „… | Hörfassung | 100percentme“, in der Filmliste steht daraus
+„[… | Audiodeskription | 100percentme](https://www.ardmediathek.de/video/Y3JpZDovL2Z1bmsubmV0LzEyMDA0L3ZpZGVvLzE2NTA2NTM)“
+– das Wort wird mitten im Titel ausgetauscht. Und im spanischen ARTE-Kanal heißt die Serie
+„[Camaradas (2/8) **(Originalversion mit Untertitel)**](https://www.arte.tv/es/videos/123309-002-A/camaradas-2-8/)“:
+ein deutscher Zusatz an einem spanischen Titel.
+
+Manchmal bleibt von einer solchen Ersetzung nur eine Hülle. In der Filmliste
+stehen Titel wie
+„Eisige Schatten – Folge 3 (S01/E03) **()** (Audiodeskription)“: leere Klammern, der Rest
+einer automatischen Umbenennung.
+
+### Gebärdensprache in fünf Schreibweisen
+
+In der Filmliste steht Gebärdensprache als „(Gebärdensprache)“, „(mit Gebärdensprache)“,
+„(Mit Gebärdensprache)“, „(DGS)“ und
+„[Die Sendung vom 23.09.2022 **mit Deutscher Gebärdensprache (DGS)**](https://www.ardmediathek.de/video/Y3JpZDovL3N3ci5kZS9hZXgvbzE3MzA3MjQ)“.
+Ein Teil davon kommt vom Sender: Die ARD-Mediathek schreibt „(mit Gebärdensprache)“, der
+SWR „mit Deutscher Gebärdensprache (DGS)“. Das kurze „(Gebärdensprache)“ hängt die
+Filmliste an, auch dort, wo der Sender gar nichts in den Titel schreibt. Im Datenfeld der
+ARD-Mediathek heißt dieselbe Sache schlicht `DGS`. Wer alle Fassungen mit Gebärdensprache
+finden will, muss fünf Schreibweisen kennen und weiß trotzdem nicht, ob er alle hat.
+
+### Vertauscht
+
+Vom Tatort „Siebte Etage (2024)“ gibt es in der ARD-Mediathek eine Seite, deren Adresse auf
+„/audiodeskription“ endet, und eine, die auf „/gebaerdensprache“ endet. Beim Sender stimmt
+alles: Die erste heißt „Siebte Etage (2024) (Audiodeskription)“, die zweite
+„Siebte Etage (2024) (mit Gebärdensprache)“.
+
+In der Filmliste steht es umgekehrt:
+
+| Adresse endet auf | Titel in der Filmliste |
+|---|---|
+| [/audiodeskription](https://www.ardmediathek.de/video/Y3JpZDovL3dkci5kZS9CZWl0cmFnLXNvcGhvcmEtZGRiYzBlYWQtNjNhMi00MTY4LThlZWYtZmE5NGUxNzM0NmY5L2F1ZGlvZGVza3JpcHRpb24) | „Siebte Etage (2024) **(Gebärdensprache)**“ |
+| [/gebaerdensprache](https://www.ardmediathek.de/video/Y3JpZDovL3dkci5kZS9CZWl0cmFnLXNvcGhvcmEtZGRiYzBlYWQtNjNhMi00MTY4LThlZWYtZmE5NGUxNzM0NmY5L2dlYmFlcmRlbnNwcmFjaGU) | „Siebte Etage (2024) **(Audiodeskription)**“ |
+
+Diesmal geht es gut aus, weil beide Seiten ohnehin alle drei Fassungen liefern. 
+Verlassen kann sich darauf niemand: Solche vertauschten Einträge stehen über 
+hundertmal in der Filmliste (109 am 30.09.2026).
+
+### Untertitel, die es gibt und die nirgends ankommen
+
+ARTE führt Untertitel ausdrücklich „für Hörgeschädigte“, etwa „Deutsch (Hörgeschädigte)“ beim
+U-Boot. In der Filmliste steht für ARTE **keine einzige** Untertitel-Adresse. Genauso geht
+es den Klare-Sprache-Dateien der ARD-Mediathek: Sie liegen als zweite Videodatei neben der
+normalen Fassung, und kein einziger Eintrag der Filmliste verweist auf eine davon. Was der
+Sender nur im Dateinamen oder im Datenfeld hinterlegt, erreicht die Filmliste nicht.
+
+Bei PHOENIX ist es anders herum: Dort fehlen die Untertitel schon beim Sender. In rund 8.000
+Antworten der ARD-Mediathek zu PHOENIX-Sendungen findet sich keine einzige. Immerhin ist
+das „Nein“ dort durchgehend korrekt, weil es gar nichts zu verlieren gab.
+
+### Dieselbe Folge, zwei Nummern
+
+Die „Rentnercops“ stehen unter derselben Adresse einmal als
+„[Folge 3: Altes Eisen](https://www.ardmediathek.de/video/Y3JpZDovL3dkci5kZS9CZWl0cmFnLTNlZjMwNjE2LTI0MDQtNGU1NS05NWZlLTZlMjZhYzJjODM5Ng)“
+(Sender ARD) und einmal als „Folge 43: Altes Eisen“ (Sender WDR). Die Hörfassung hängt nur am
+zweiten Eintrag. Wer nach Folge 3 sucht, findet sie nicht.
+
+### Wörter, die täuschen
+
+Am Ende der Kette stehen die Programme, und die haben nur noch den Titel. Was ein Wort
+im Titel bedeutet, müssen sie raten:
+
+„[In der Tonkabine: So entstehen Hörfilme](https://www.ardmediathek.de/video/Y3JpZDovL21kci5kZS9iZWl0cmFnL2Ntcy9lNTcwOTAzMS00MWI1LTQ4OGEtYmFjYy04ZWM4NzEyMjhhMzI)“
+ist ein Beitrag über Hörfilme, aber selbst keiner.
+„[Leichte Sprache braucht fast jeder zehnte Mensch](https://www.ardmediathek.de/video/Y3JpZDovL3N3ci5kZS9hZXgvbzIwNzc3MjE)“
+ist ein Beitrag *über* Leichte Sprache, nicht *in* ihr. Ein verbreitetes Programm wertet schon
+„AD |“ oder „Hörspiel“ im Titel als Hinweis auf eine Hörfassung und kündigt so
+„[Das Ende von THE WALKING DE**AD |** TOP 5](https://www.ardmediathek.de/video/Y3JpZDovL2Z1bmsubmV0LzExNjY0L3ZpZGVvLzE3NTg4MDk)“
+oder „[Die Pfefferkörner gibt's auch als **Hörspiel**!](https://www.ardmediathek.de/video/Y3JpZDovL25kci5kZS80NzFhMzkyNy0zZTZmLTRhNGYtYTU5Ny02OGI2NGE3ZDU1Yjg)“
+als Hörfassung an.
+
+Eine Suche, die beide Begriffe zusammenwirft, schickt einen schwerhörigen Menschen zu
+Nachrichten in vereinfachter Sprache.
 
 ---
 
