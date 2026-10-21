@@ -2,11 +2,22 @@
 
 **Barrierefreie Fassungen in den öffentlich-rechtlichen Mediatheken: produziert, bezahlt und ohne verlässliche Auskunft.**
 
-ARD, ZDF und ARTE produzieren Sendungen mit Hörfassung, in Gebärdensprache, in Einfacher Sprache und mit Klarer Sprache. Eine Hörfassung (auch Audiodeskription oder Hörfilm genannt) ist eine zusätzliche Tonspur, die beschreibt, was im Bild passiert. Bezahlt werden all diese Fassungen aus dem Rundfunkbeitrag. Gemacht werden sie für Menschen, die sie brauchen: blinde und sehbehinderte Menschen, gehörlose und schwerhörige Menschen, Menschen, die auf vereinfachte Sprache angewiesen sind.
+ARD, ZDF und ARTE produzieren Sendungen mit **Hörfassung**, in **Gebärdensprache**, in
+**Einfacher Sprache** und mit **Klarer Sprache**. Eine Hörfassung (auch Audiodeskription
+oder Hörfilm genannt) ist eine zusätzliche Tonspur, die in den Dialogpausen beschreibt, was
+im Bild passiert. Bei einer Fassung in Gebärdensprache ist eine Dolmetscherin oder ein
+Dolmetscher ins Bild eingeblendet und übersetzt in Deutsche Gebärdensprache. Einfache
+Sprache verändert den Text: kürzere Sätze, einfachere Wörter, zum Beispiel bei der
+täglichen „tagesschau in Einfacher Sprache“. Klare Sprache verändert nur den Ton: Musik und
+Geräusche leiser, Dialog lauter, die Wörter bleiben gleich. Dazu kommen Untertitel für
+Hörgeschädigte, die neben dem Dialog auch Geräusche und Musik beschreiben. Bezahlt werden
+all diese Fassungen aus dem Rundfunkbeitrag. Gemacht werden sie für Menschen, die sie
+brauchen: blinde und sehbehinderte Menschen, gehörlose und schwerhörige Menschen, Menschen,
+die auf vereinfachte Sprache angewiesen sind.
 
-Man sollte meinen, es genüge nachzusehen, ob „Hörfassung“ dabeisteht. Dieses Repository
-zeigt an echten Beispielen, warum das nicht reicht. Die Probleme haben zwei Ursprünge,
-und man muss sie auseinanderhalten:
+Wie findet man diese Medien: Man sollte meinen, es genüge nachzusehen, ob „Hörfassung“ 
+dabeisteht. Dieses Repository zeigt an echten Beispielen, warum das nicht reicht. 
+Die Probleme haben zwei Ursprünge, und man muss sie auseinanderhalten:
 
 **Erstens die Sender.** ARD, ZDF, ARTE, KiKA und PHOENIX beschreiben barrierefreie Fassungen
 jeder für sich: mit eigenen Wörtern, eigenen Datenfeldern, eigenen Auslieferungsformen.
@@ -56,8 +67,9 @@ damit in allen Programmen, die auf ihr aufbauen.
 Wer bemerkt die Lücke, wenn eine Information auf diesem Weg verloren geht? Fast niemand. Wer gut sieht
 und hört, braucht diese Fassungen nicht und sucht nicht nach ihnen. Wer sie braucht, bekommt von seinem
 Programm ein „gibt es nicht“ und kann nicht selbst prüfen, ob das stimmt. Es gibt für dieses Szenario 
-keine Fehlermeldung, und wer nicht weiß, dass etwas fehlt, beschwert sich nicht. So bleibt ein bezahltes
-Angebot bei den Menschen unsichtbar, für die es gemacht ist, und in keiner Statistik taucht das auf.
+keine Fehlermeldung, und wer nicht weiß, dass etwas fehlt, beschwert sich nicht. **Die Betroffenen 
+scheitern still**. So bleibt ein bezahltes Angebot bei den Menschen unsichtbar, für die es eigentlich
+gemacht ist, und in keiner Statistik taucht das auf.
 
 Alle nachfolgenden Beispiele sind verlinkt, damit sich jeder selbst ein Bild machen kann. Mediatheken nehmen
 Sendungen nach Ablauf der Rechte wieder heraus; ein Link kann deshalb irgendwann ins Leere
@@ -353,11 +365,13 @@ vorbeimuss, und keine davon hat das Projekt selbst gesetzt.
 **Die Quellen.** Die Filmliste kann nur weitergeben, was die Sender hergeben, und die geben
 es jeder anders her: als Wort im Titel, als Teil der Seitenadresse, als Dateiname, als
 Datenfeld. Keine dieser Schnittstellen ist offen dokumentiert, und sie ändern sich ohne
-Ankündigung. Die Commit-Geschichte des Crawlers zeigt das: zwischen 35 und 90 Änderungen am
-Senderteil pro Jahr, meist um die 50, und in acht der neun Jahre seit 2018 musste
-mindestens ein Sender komplett neu angebunden werden, zuletzt das ZDF 2025 mit seiner
-neuen Mediathek (Stand Oktober 2026). Das ist keine Weiterentwicklung, das ist Nachsteuern.
-Jedes neue Feld wäre eine weitere Stelle, die bei jeder Senderänderung mitbricht.
+Ankündigung. Techniker nennen das Schema Drift: Die Struktur der Daten wandert, und jedes
+Programm, das sie liest, muss hinterherlaufen. Die Commit-Geschichte des Crawlers zeigt
+das: zwischen 35 und 90 Änderungen am Senderteil pro Jahr, meist um die 50, und in acht der
+neun Jahre seit 2018 musste mindestens ein Sender komplett neu angebunden werden, zuletzt
+das ZDF 2025 mit seiner neuen Mediathek (Stand Oktober 2026). Das ist keine
+Weiterentwicklung, das ist Nachsteuern. Jedes neue Feld wäre eine weitere Stelle, die bei
+jeder Senderänderung mitbricht.
 
 **Der Betrieb.** Der Crawler fragt mehrmals täglich rund dreißig Mediatheken ab, und die
 Sender begrenzen, wie oft er das darf. Die ARTE-Untertitel zeigen, was das heißt: Der
